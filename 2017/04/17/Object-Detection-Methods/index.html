@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Object Recognition," />
 
 
 
@@ -93,16 +93,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="Part I: Basic Method “Histograms of Oriented Gradients for Human Detection,” N. Dalal and W. Triggs, Proc. IEEE CVPR 2005.  Improvement: Detect the boundary of the object as well: Learning to Detect N">
+<meta name="keywords" content="Object Recognition">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/06/19/hello-world/index.html">
+<meta property="og:title" content="Object Detection Methods">
+<meta property="og:url" content="http://yoursite.com/2017/04/17/Object-Detection-Methods/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-06-19T19:36:57.600Z">
+<meta property="og:description" content="Part I: Basic Method “Histograms of Oriented Gradients for Human Detection,” N. Dalal and W. Triggs, Proc. IEEE CVPR 2005.  Improvement: Detect the boundary of the object as well: Learning to Detect N">
+<meta property="og:updated_time" content="2017-04-17T07:34:14.778Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Object Detection Methods">
+<meta name="twitter:description" content="Part I: Basic Method “Histograms of Oriented Gradients for Human Detection,” N. Dalal and W. Triggs, Proc. IEEE CVPR 2005.  Improvement: Detect the boundary of the object as well: Learning to Detect N">
 
 
 
@@ -130,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/06/19/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/17/Object-Detection-Methods/"/>
 
 
 
 
 
-  <title>Hello World | Hexo</title>
+  <title>Object Detection Methods | Hexo</title>
   
 
 
@@ -255,7 +256,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/19/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/17/Object-Detection-Methods/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -272,7 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">Object Detection Methods</h1>
         
 
         <div class="post-meta">
@@ -284,8 +285,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-19T12:36:57-07:00">
-                2017-06-19
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-17T00:29:05-07:00">
+                2017-04-17
               </time>
             
 
@@ -319,15 +320,41 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h3 id="Part-I-Basic-Method"><a href="#Part-I-Basic-Method" class="headerlink" title="Part I: Basic Method"></a>Part I: Basic Method</h3><ol>
+<li><p>“Histograms of Oriented Gradients for Human Detection,” N. Dalal and W. Triggs, Proc. IEEE CVPR 2005.</p>
+</li>
+<li><p>Improvement: Detect the boundary of the object as well: Learning to Detect Natural Image Boundaries Using Local Brightness, Color, and Texture Cues,” D.R. Martin, C.C. Fowlkes, and J. Malik, Proc. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2004.</p>
+</li>
+</ol>
+<h3 id="Part-II-Object-Detection-Method"><a href="#Part-II-Object-Detection-Method" class="headerlink" title="Part II: Object Detection Method"></a>Part II: Object Detection Method</h3><p><strong>1. DPM :</strong></p>
+<p>“Object Detection Using Discriminatively Trained Part-based Models,” P. Felzenszwalb, R. Girshick, D. McAllester, and D. Ramanan, Proc. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2010.</p>
+<p><a href="https://people.eecs.berkeley.edu/~rbg/papers/Object-Detection-with-Discriminatively-Trained-Part-Based-Models--Felzenszwalb-Girshick-McAllester-Ramanan.pdf" target="_blank" rel="external">https://people.eecs.berkeley.edu/~rbg/papers/Object-Detection-with-Discriminatively-Trained-Part-Based-Models–Felzenszwalb-Girshick-McAllester-Ramanan.pdf</a></p>
+<p><strong>2. Bags of Features(Global + Local Features):</strong></p>
+<p>“Pedestrian Detection in Crowded Scenes” B. Leibe; E. Seemann; B. Schiele, Proc. IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2005</p>
+<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=1467359" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=1467359</a></p>
+<p><strong>3. R-CNN(Region proposals + CNN) :</strong></p>
+<p>“Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation” R. Girshick, J. Donahue, T. Darrell, J. Malik, Proc. CVPR 2014</p>
+<p><a href="https://people.eecs.berkeley.edu/~rbg/papers/r-cnn-cvpr.pdf" target="_blank" rel="external">https://people.eecs.berkeley.edu/~rbg/papers/r-cnn-cvpr.pdf</a></p>
+<p><strong>Faster R-CNN:</strong></p>
+<p>“Towards Real-Time Object Detection with Region Proposal Networks” Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun, Proc. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2016</p>
+<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=7485869" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=7485869</a></p>
+<p><strong>4. Multi-filter + Motion, CSS:</strong></p>
+<p>“New Features and Insights for Pedestrian Detection” S. Walk, N. Majer, K. Schindler, and B. Schiele, Proc. IEEE Computer Vision and Pattern Recognition, 2010.</p>
+<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=5540102" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=5540102</a></p>
+<p><strong>5. CNN:</strong></p>
+<p>“Hierarchical Convolutional Features for Visual Tracking” Chao Ma; Jia-Bin Huang; Xiaokang Yang; Ming-Hsuan Yang, Proc. 2015 IEEE International Conference on Computer Vision, 2015</p>
+<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=7410709" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=7410709</a></p>
+<h3 id="Part-III-Data-Set"><a href="#Part-III-Data-Set" class="headerlink" title="Part III: Data Set"></a>Part III: Data Set</h3><p><strong>1. Caltech Pedestrian data set</strong></p>
+<p>P. Dolla´r, C. Wojek, B. Schiele, and P. Perona, “Pedestrian Detection: A Benchmark” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2009.</p>
+<p><a href="http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/" target="_blank" rel="external">http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/</a></p>
+<p><strong>2. INRIA</strong></p>
+<p>N. Dalal and B. Triggs, “Histograms of Oriented Gradients for Human Detection” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2005.</p>
+<p><a href="http://pascal.inrialpes.fr/data/human/" target="_blank" rel="external">http://pascal.inrialpes.fr/data/human/</a></p>
+<p><strong>3. VOC-DPM</strong></p>
+<p>P. Felzenszwalb, D. McAllester, D. Ramanan, “A Discriminatively Trained, Multiscale, Deformable Part Model” Proc. IEEE Conference on Computer Vision and Pattern Recognition, 2008</p>
+<p><a href="https://people.eecs.berkeley.edu/~rbg/latent/" target="_blank" rel="external">https://people.eecs.berkeley.edu/~rbg/latent/</a></p>
+<p><strong>4. Visual Tracker Benchmark</strong><br>Yi Wu; Jongwoo Lim; Ming-Hsuan Yang “Online Object Tracking: A Benchmark” Proc. IEEE Conference on Computer Vision and Pattern Recognition, 2013</p>
+<p><a href="https://sites.google.com/site/trackerbenchmark/benchmarks/v10" target="_blank" rel="external">https://sites.google.com/site/trackerbenchmark/benchmarks/v10</a></p>
 
       
     </div>
@@ -355,6 +382,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Object-Recognition/" rel="tag"># Object Recognition</a>
+          
+        </div>
+      
 
       
       
@@ -364,8 +397,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/18/Caffe-Installation-in-Ubuntu-14-04/" rel="next" title="Caffe Installation in Ubuntu 14.04">
-                <i class="fa fa-chevron-left"></i> Caffe Installation in Ubuntu 14.04
+              <a href="/2017/04/17/Object-Recognition-Review/" rel="next" title="Object Recognition Review">
+                <i class="fa fa-chevron-left"></i> Object Recognition Review
               </a>
             
           </div>
@@ -373,6 +406,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/05/04/Object-Detection-Progress/" rel="prev" title="Object Detection Progress">
+                Object Detection Progress <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -492,7 +529,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Part-I-Basic-Method"><span class="nav-number">1.</span> <span class="nav-text">Part I: Basic Method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Part-II-Object-Detection-Method"><span class="nav-number">2.</span> <span class="nav-text">Part II: Object Detection Method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Part-III-Data-Set"><span class="nav-number">3.</span> <span class="nav-text">Part III: Data Set</span></a></li></ol></div>
             
 
           </div>

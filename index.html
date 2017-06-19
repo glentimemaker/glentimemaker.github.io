@@ -200,7 +200,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -210,7 +210,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -282,7 +282,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-19T12:36:57-07:00">
                 2017-06-19
@@ -364,6 +364,1132 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/18/Caffe-Installation-in-Ubuntu-14-04/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/18/Caffe-Installation-in-Ubuntu-14-04/" itemprop="url">Caffe Installation in Ubuntu 14.04</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-18T17:29:46-07:00">
+                2017-06-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/18/CNN-Example-1-Recognize-Object/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/18/CNN-Example-1-Recognize-Object/" itemprop="url">CNN Example#1 Recognize Object</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-18T16:48:03-07:00">
+                2017-06-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>This article gives a high level overview for the process of recognizing the object by neural network.</p>
+<h3 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h3><p>To be more clever, we could run this algorithm multiple times with different of weights that each capture <strong>different edge cases</strong>:</p>
+<p><img src="http://i.imgur.com/REGmPoc.png" alt=""></p>
+<h3 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h3><p>Let’s combine our four attempts to guess into one big diagram:</p>
+<p><img src="http://i.imgur.com/te75No2.png" alt=""></p>
+<h3 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h3><p>Back propagation, using gradient descent algorithm which takes consider of the Cost Function.</p>
+<h3 id="Step-4"><a href="#Step-4" class="headerlink" title="Step 4"></a>Step 4</h3><p>Convolution (Make the result translation invariant)</p>
+<p><strong>1. Break the image into overlapping image tiles</strong></p>
+<p><img src="http://i.imgur.com/Vs1VvNa.png" alt=""></p>
+<p>Why we split the image into tiles? Because:</p>
+<p><img src="http://i.imgur.com/H3jwRtH.jpg" alt=""></p>
+<p>Fully connected NN: 1000 × 1000 × 10^6 = 10^12<br>Locally connected NN: 10 × 10 × 10^6 = 10^8</p>
+<p><strong>2. Feed each image tile into a small neural network</strong></p>
+<p>We’ll keep the same neural network weights for every single tile in the same original image. In other words, we are treating every image tile equally(Share the weights). If something interesting appears in any given tile, we’ll mark that tile as interesting.</p>
+<p><img src="http://i.imgur.com/gnBVI2g.png" alt=""></p>
+<p>Why we share the weight?</p>
+<p><img src="http://i.imgur.com/DyWjrG2.jpg" alt=""></p>
+<p>Convolutional N: 10 x 10 x 100= 10k</p>
+<p><strong>3. Save the results from each tile into a new array</strong></p>
+<p><img src="http://i.imgur.com/R2hRcJx.png" alt=""></p>
+<p>Convolution process:</p>
+<p><img src="http://i.imgur.com/zvLauA8.png" alt=""></p>
+<p><strong>4. Downsampling</strong></p>
+<p>Use max pooling method to look at each 2x2 square of the array and keep the biggest number, which means to keep the most interesting bit.</p>
+<p><img src="http://i.imgur.com/MIyswbA.png" alt=""></p>
+<p><strong>5. Do prediction</strong></p>
+<p>We can use that small array as input into another neural network, this final neural network will decide if the image is or isn’t a match:</p>
+<p><img src="http://i.imgur.com/Cb5Uyhu.png" alt=""></p>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><p>When solving problems in the real world, these steps can be combined and stacked as many times as you want! You can have two, three or even ten convolution layers. You can throw in max pooling wherever you want to reduce the size of your data.</p>
+<p>The basic idea is to start with a large image and continually boil it down, step-by-step, until you finally have a single result. The more convolution steps you have, the more <strong>complicated features</strong> your network will be able to learn to recognize.</p>
+<p>For example, the first convolution step might learn to recognize sharp edges, the second convolution step might recognize beaks using it’s knowledge of sharp edges, the third step might recognize entire birds using it’s knowledge of beaks, etc.</p>
+<p><img src="http://i.imgur.com/VHYdTDR.png" alt=""></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/18/Training-MNIST-dataset-by-TensorFlow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/18/Training-MNIST-dataset-by-TensorFlow/" itemprop="url">Training MNIST dataset by TensorFlow</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-18T16:30:22-07:00">
+                2017-06-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>In this article, I will introduce MNIST data set and review the process of training the MINIST data set to get the model by using TensorFlow.</p>
+<h3 id="MNIST-Data-Set"><a href="#MNIST-Data-Set" class="headerlink" title="MNIST Data Set"></a>MNIST Data Set</h3><p>This database is a large database of handwritten digits that is commonly used for training various image processing systems. This database contains 60,000 training images (mnist.train) and 10,000 testing images (mnist.test)</p>
+<p><img src="http://i.imgur.com/rwMpFVu.png" alt=""></p>
+<p>28x28 pixels in one image, we can use 28x28 = 784 dimensions vector to present this matrix.</p>
+<p><img src="http://i.imgur.com/6iflNXC.png" alt=""></p>
+<p>Mnist.train.xs represents 60000 training images.</p>
+<p><img src="http://i.imgur.com/wos2B91.png" alt=""></p>
+<p>Mnist.train.ys represents the label of the 60000 image. There’re 10 labels from 0 to 9. Each label is the real number shown in each image.</p>
+<h3 id="Methodology-Softmax-Regression"><a href="#Methodology-Softmax-Regression" class="headerlink" title="Methodology : Softmax Regression"></a>Methodology : Softmax Regression</h3><p>We use softmax regression to classify each type of writing.</p>
+<p><strong>1. The model of the learning</strong></p>
+<p><img src="http://i.imgur.com/qXINxjp.png" alt=""></p>
+<p><strong>2. Cost function</strong></p>
+<p><img src="http://i.imgur.com/TqJkteC.png" alt=""></p>
+<p><strong>3. Training Algorithm</strong></p>
+<p>Use Gradient Descent algorithm, which is backpropagation algorithm.<br>The backpropagation algorithm looks for the minimum of the error function in weight space using the method of gradient descent.</p>
+<h3 id="Using-TensorFlow"><a href="#Using-TensorFlow" class="headerlink" title="Using TensorFlow"></a>Using TensorFlow</h3><p><strong>Step 1:</strong></p>
+<p>Initialize &amp; start the model</p>
+<pre><code>init = tf.initialize_all_variables()
+
+sess = tf.Session()
+sess.run(init)
+</code></pre><p><strong>Step 2:</strong></p>
+<p>Training the model (Optimize the weights)</p>
+<pre><code>for i in range(1000):
+batch_xs, batch_ys = mnist.train.next_batch(100) // Stochastic training: Randomly use 100 data to train the model.
+
+sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
+
+And the train_step is:
+train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
+</code></pre><p><strong>Step 3:</strong></p>
+<p>Evaluate the model</p>
+<pre><code>correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1)) //y_ is the correct label
+
+accuracy = tf.reduce_mean(tf.cast(correct_prediction, &quot;float&quot;)) // The accuracy of the model
+
+print sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels}) // Print out the accuracy
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/04/Object-Detection-Progress/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/05/04/Object-Detection-Progress/" itemprop="url">Object Detection Progress</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-04T15:51:19-07:00">
+                2017-05-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Part-I-Computer-Vision-Field-Leaders："><a href="#Part-I-Computer-Vision-Field-Leaders：" class="headerlink" title="Part I Computer Vision Field Leaders："></a>Part I Computer Vision Field Leaders：</h3><p><a href="http://mp.weixin.qq.com/s?__biz=MzAwMTA3MzM4Nw==&amp;mid=2649439592&amp;idx=1&amp;sn=fdb687300e4a930fdd08c23d8816bbd8&amp;chksm=82c0d4ecb5b75dfae69dd0a219916ab8533da9a6d02d3c7cfbcc5323579c16033bba7407f2b5&amp;scene=21#wechat_redirect" target="_blank" rel="external">http://mp.weixin.qq.com/s?__biz=MzAwMTA3MzM4Nw==&amp;mid=2649439592&amp;idx=1&amp;sn=fdb687300e4a930fdd08c23d8816bbd8&amp;chksm=82c0d4ecb5b75dfae69dd0a219916ab8533da9a6d02d3c7cfbcc5323579c16033bba7407f2b5&amp;scene=21#wechat_redirect</a></p>
+<p><strong>David Marr(1945-1980)</strong> : </p>
+<p>He laid the groundwork of computer vision. &lt;<vision：a computational="" investigation="" into="" the="" human="" representation="" and="" processing="" of="" visual="" information="">&gt;  </vision：a></p>
+<ol>
+<li><p>Three major levels of CV: Express(use math to express the problem), Algorithm(to solve the problem), Implement(can be implemented in CPU, DSP or NN)</p>
+</li>
+<li><p>What is computed in CV: primal sketch, 2 1/2 D sketch, 3D sketch, including texture, 3D vision, motion analysis, surface shape.</p>
+</li>
+<li><p>CV is the “progress” of learning the image, is not the result. The longer you observe the image, the more information you will get. 视觉是受任务驱动的，而任务是时刻在改变之中。 视觉求解不是打一个固定的靶子， 而是打一个运动目标。</p>
+</li>
+</ol>
+<p><strong>King-Sun Fu 傅京孫(1930-1985)</strong></p>
+<ol>
+<li>Syntactic Pattern Recognition</li>
+<li>Bottom-up and Top-down</li>
+</ol>
+<p><strong>Ulf Grenander (1923-2016)</strong></p>
+<p>Pattern Theory( use math and statistic)</p>
+<p>Proposed analysis-by-synthesis (let the model to generate a image then tell the different between the generated image and the real-world image, then you will know whether this model is a great model) </p>
+<h3 id="Part-II-Time-Line"><a href="#Part-II-Time-Line" class="headerlink" title="Part II Time Line"></a>Part II Time Line</h3><h3 id="1999"><a href="#1999" class="headerlink" title="1999"></a>1999</h3><p><strong>Scale Invariant Feature Transform(SIFT)</strong></p>
+<p>(improved in 2004)</p>
+<ul>
+<li>detector</li>
+<li>descriptor</li>
+</ul>
+<p>Based on points describe.</p>
+<h3 id="Feature-Based-Descriptor-1995-2010"><a href="#Feature-Based-Descriptor-1995-2010" class="headerlink" title="Feature Based Descriptor (1995~2010)"></a>Feature Based Descriptor (1995~2010)</h3><p><strong>1. Shape Context 2002</strong></p>
+<p>Used in MNIST.</p>
+<p><strong>2. HOG 2005</strong></p>
+<p>Describe the whole patch.</p>
+<p><strong>3. Spin Image 1997-&gt;1999</strong></p>
+<p>A descriptor of 3D mesh, used in surface matching.</p>
+<p><strong>4. STIP (Space time interest points) 2005; HOF (Histogram of oriented optical flow, 2009); MBH (motion boundary histogram, 2013)</strong></p>
+<h3 id="Object-Recognition-2005-2010"><a href="#Object-Recognition-2005-2010" class="headerlink" title="Object Recognition 2005~2010"></a>Object Recognition 2005~2010</h3><p><strong>1. LDA (Latent Dirichlet Allocation) 2003</strong></p>
+<p>Unsupervised topic modeling, BoW(bag of visual words) algorithm.</p>
+<p><strong>2. SPM (Spatial Pyramid Matching)</strong></p>
+<p>Use spatial grid to separate the image into patches, then calculate the BoW histogram, then combine them together, thus those encoded vector descriptor will have spatial information.</p>
+<p><strong>3. Image Encoding Method based on Bow 2006~2009</strong></p>
+<p>Sparse coding, Fisher vector to improve BoW (use image encoding)</p>
+<p><strong>4. PMK (pyramid matching kernel)</strong></p>
+<p><strong>5. DPM (deformable parts models) 2010</strong></p>
+<h3 id="Deep-Learning-2010-2015"><a href="#Deep-Learning-2010-2015" class="headerlink" title="Deep Learning 2010~2015"></a>Deep Learning 2010~2015</h3><p>Doesn’t need the structure information of the object, multiple layers.</p>
+<p>n* (convolution layer + pooling layer) + several fully connected layers</p>
+<p><strong>1. OverFeat</strong></p>
+<ul>
+<li>Step 1: Use slide window to get multi-scales ROI. Classify each region by CNN.</li>
+<li>Step 2: Use regression model to estimate the location of the object. Use bounding box to box the object.</li>
+<li>Combine the bounding boxes. </li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/17/Object-Detection-Methods/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/04/17/Object-Detection-Methods/" itemprop="url">Object Detection Methods</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-17T00:29:05-07:00">
+                2017-04-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Part-I-Basic-Method"><a href="#Part-I-Basic-Method" class="headerlink" title="Part I: Basic Method"></a>Part I: Basic Method</h3><ol>
+<li><p>“Histograms of Oriented Gradients for Human Detection,” N. Dalal and W. Triggs, Proc. IEEE CVPR 2005.</p>
+</li>
+<li><p>Improvement: Detect the boundary of the object as well: Learning to Detect Natural Image Boundaries Using Local Brightness, Color, and Texture Cues,” D.R. Martin, C.C. Fowlkes, and J. Malik, Proc. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2004.</p>
+</li>
+</ol>
+<h3 id="Part-II-Object-Detection-Method"><a href="#Part-II-Object-Detection-Method" class="headerlink" title="Part II: Object Detection Method"></a>Part II: Object Detection Method</h3><p><strong>1. DPM :</strong></p>
+<p>“Object Detection Using Discriminatively Trained Part-based Models,” P. Felzenszwalb, R. Girshick, D. McAllester, and D. Ramanan, Proc. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2010.</p>
+<p><a href="https://people.eecs.berkeley.edu/~rbg/papers/Object-Detection-with-Discriminatively-Trained-Part-Based-Models--Felzenszwalb-Girshick-McAllester-Ramanan.pdf" target="_blank" rel="external">https://people.eecs.berkeley.edu/~rbg/papers/Object-Detection-with-Discriminatively-Trained-Part-Based-Models–Felzenszwalb-Girshick-McAllester-Ramanan.pdf</a></p>
+<p><strong>2. Bags of Features(Global + Local Features):</strong></p>
+<p>“Pedestrian Detection in Crowded Scenes” B. Leibe; E. Seemann; B. Schiele, Proc. IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2005</p>
+<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=1467359" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=1467359</a></p>
+<p><strong>3. R-CNN(Region proposals + CNN) :</strong></p>
+<p>“Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation” R. Girshick, J. Donahue, T. Darrell, J. Malik, Proc. CVPR 2014</p>
+<p><a href="https://people.eecs.berkeley.edu/~rbg/papers/r-cnn-cvpr.pdf" target="_blank" rel="external">https://people.eecs.berkeley.edu/~rbg/papers/r-cnn-cvpr.pdf</a></p>
+<p><strong>Faster R-CNN:</strong></p>
+<p>“Towards Real-Time Object Detection with Region Proposal Networks” Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun, Proc. IEEE Transactions on Pattern Analysis and Machine Intelligence, 2016</p>
+<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=7485869" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=7485869</a></p>
+<p><strong>4. Multi-filter + Motion, CSS:</strong></p>
+<p>“New Features and Insights for Pedestrian Detection” S. Walk, N. Majer, K. Schindler, and B. Schiele, Proc. IEEE Computer Vision and Pattern Recognition, 2010.</p>
+<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=5540102" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=5540102</a></p>
+<p><strong>5. CNN:</strong></p>
+<p>“Hierarchical Convolutional Features for Visual Tracking” Chao Ma; Jia-Bin Huang; Xiaokang Yang; Ming-Hsuan Yang, Proc. 2015 IEEE International Conference on Computer Vision, 2015</p>
+<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=7410709" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=7410709</a></p>
+<h3 id="Part-III-Data-Set"><a href="#Part-III-Data-Set" class="headerlink" title="Part III: Data Set"></a>Part III: Data Set</h3><p><strong>1. Caltech Pedestrian data set</strong></p>
+<p>P. Dolla´r, C. Wojek, B. Schiele, and P. Perona, “Pedestrian Detection: A Benchmark” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2009.</p>
+<p><a href="http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/" target="_blank" rel="external">http://www.vision.caltech.edu/Image_Datasets/CaltechPedestrians/</a></p>
+<p><strong>2. INRIA</strong></p>
+<p>N. Dalal and B. Triggs, “Histograms of Oriented Gradients for Human Detection” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2005.</p>
+<p><a href="http://pascal.inrialpes.fr/data/human/" target="_blank" rel="external">http://pascal.inrialpes.fr/data/human/</a></p>
+<p><strong>3. VOC-DPM</strong></p>
+<p>P. Felzenszwalb, D. McAllester, D. Ramanan, “A Discriminatively Trained, Multiscale, Deformable Part Model” Proc. IEEE Conference on Computer Vision and Pattern Recognition, 2008</p>
+<p><a href="https://people.eecs.berkeley.edu/~rbg/latent/" target="_blank" rel="external">https://people.eecs.berkeley.edu/~rbg/latent/</a></p>
+<p><strong>4. Visual Tracker Benchmark</strong><br>Yi Wu; Jongwoo Lim; Ming-Hsuan Yang “Online Object Tracking: A Benchmark” Proc. IEEE Conference on Computer Vision and Pattern Recognition, 2013</p>
+<p><a href="https://sites.google.com/site/trackerbenchmark/benchmarks/v10" target="_blank" rel="external">https://sites.google.com/site/trackerbenchmark/benchmarks/v10</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/17/Object-Recognition-Review/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/04/17/Object-Recognition-Review/" itemprop="url">Object Recognition Review</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-17T00:16:52-07:00">
+                2017-04-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="I-The-history-of-recognition"><a href="#I-The-history-of-recognition" class="headerlink" title="I. The history of recognition"></a>I. The history of recognition</h3><p> <img src="http://i.imgur.com/ylLpe9h.png" alt=""></p>
+<h3 id="II-The-process-of-object-recognition"><a href="#II-The-process-of-object-recognition" class="headerlink" title="II. The process of object recognition"></a>II. The process of object recognition</h3><p><img src="http://i.imgur.com/mdNGms4.png" alt=""></p>
+<p><a href="http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf" target="_blank" rel="external">http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf </a></p>
+<p><strong>Step 1. Image features</strong></p>
+<p><img src="http://i.imgur.com/SHM54HM.png" alt=""></p>
+<p><strong>Step 2. Learning</strong></p>
+<p><em>A. Classification</em></p>
+<p>There are many methods to choose from:</p>
+<p>• K-nearest neighbor</p>
+<p>• SVM</p>
+<p>• Neural networks</p>
+<p>• Naïve Bayes</p>
+<p>• Bayesian network</p>
+<p>• Logic regression</p>
+<p>• Randomized Forests</p>
+<p>• Boosted Decision Trees</p>
+<p>• RBMs</p>
+<p>• Etc.</p>
+<h3 id="III-Typical-Method"><a href="#III-Typical-Method" class="headerlink" title="III. Typical Method"></a>III. Typical Method</h3><p><strong>A. Bags of Features</strong></p>
+<p><a href="http://www.cs.cornell.edu/courses/cs4670/2015sp/lectures/lec35_reco3_web.pdf" target="_blank" rel="external">http://www.cs.cornell.edu/courses/cs4670/2015sp/lectures/lec35_reco3_web.pdf</a></p>
+<p><em>(1) Origin</em></p>
+<p>Texture recognition:</p>
+<p>• Texture is characterized by the repetition of basic elements or textons</p>
+<p>• For stochastic textures, the identity of the textons, not their spatial arrangement, matters<br>Julesz, 1981; Cula &amp; Dana, 2001; Leung &amp; Malik 2001; Mori, Belongie &amp; Malik, 2001; Schmid 2001; Varma &amp; Zisserman, 2002, 2003; Lazebnik, Schmid &amp; Ponce, 2003</p>
+<p>Bag-of-words models:</p>
+<p>Orderless document representation: frequencies of words from a dictionary. Salton &amp; McGill (1983)</p>
+<p><em>(2) Outline</em></p>
+<p><img src="http://i.imgur.com/koumuPo.png" alt=""></p>
+<p>Step 2: Using K-means clustering</p>
+<p>Step 4: K nearest neighbors</p>
+<p><strong>B. CNN(Convolutional Neural Network)</strong></p>
+<p><img src="http://i.imgur.com/vNwwN9C.png" alt=""></p>
+<p><a href="http://cs231n.github.io/convolutional-networks/#overview" target="_blank" rel="external">http://cs231n.github.io/convolutional-networks/#overview</a></p>
+<h3 id="IV-Data-Set"><a href="#IV-Data-Set" class="headerlink" title="IV. Data Set"></a>IV. Data Set</h3><p><strong>A. Pedestrian</strong></p>
+<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=5975165&amp;tag=1" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=5975165&amp;tag=1</a></p>
+<ol>
+<li>Caltech Pedestrian data set<br>P. Dolla´r, C. Wojek, B. Schiele, and P. Perona, “Pedestrian Detection: A Benchmark,” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2009.</li>
+<li>ETH:<br>A. Ess, B. Leibe, and L. Van Gool, “Depth and Appearance for Mobile Scene Analysis,” Proc. IEEE Int’l Conf. Computer Vision, 2007.</li>
+<li>TUB-Brussels<br>C. Wojek, S. Walk, and B. Schiele, “Multi-Cue Onboard Pedestrian Detection,” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2009</li>
+<li>Daimler<br>M. Enzweiler and D.M. Gavrila, “Monocular Pedestrian Detection: Survey and Experiments,” IEEE Trans. Pattern Analysis and Machine Intelligence, vol. 31, no. 12, pp. 2179- 2195, Dec. 2009.</li>
+<li>INRIA<br>N. Dalal and B. Triggs, “Histograms of Oriented Gradients for Human Detection,” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2005.</li>
+</ol>
+<p><strong>B. Vehicle</strong></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/17/Parsing-information-from-Google-Street-View-image/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/04/17/Parsing-information-from-Google-Street-View-image/" itemprop="url">Parsing information from Google Street View image</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-17T00:01:59-07:00">
+                2017-04-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>Reference Paper:</strong></p>
+<p><a href="http://vision.ucsd.edu/sites/default/files/sean_cities.pdf" target="_blank" rel="external">http://vision.ucsd.edu/sites/default/files/sean_cities.pdf</a></p>
+<h3 id="Data-Sets-Build-Up"><a href="#Data-Sets-Build-Up" class="headerlink" title="Data Sets Build Up"></a>Data Sets Build Up</h3><p><strong>1. Data Collection:</strong></p>
+<p>The difficulty with Flickr and other consumer photo-sharing websites for geographical tasks is that there is a strong data bias towards famous landmarks. To correct for this bias and provide a more uniform sampling of the geographical space, we turn to GOOGLE STREET VIEW – a huge database of street-level imagery, captured as panoramas using specially-designed vehicles. This enables extraction of roughly fronto-parallel views of building facades and, to some extent, avoids dealing with large variations of camera viewpoint.</p>
+<p>Google Street View data sets building: <a href="http://cmp.felk.cvut.cz/ftp/articles/gronat/Gronat-TR-2011-16.pdf" title="Google Street View Data Set Building" target="_blank" rel="external">http://cmp.felk.cvut.cz/ftp/articles/gronat/Gronat-TR-2011-16.pdf</a><br>Use panoramas image to reconstruct the city.</p>
+<p><strong>2. Data Classification Method:</strong></p>
+<p>a. Main Idea:</p>
+<p>We propose an approach that avoids partitioning the entire feature space into clusters. Instead, we start with a large number of randomly sampled candidate patches(<strong>Seed of the cluster</strong>), and then give each candidate a chance to see if it can converge to a cluster that is both frequent(frequently occurring within the given locale) and discriminative(geographically discriminative, doesn’t occur much in other city), which is labeled as <strong>positive</strong>. We first compute the nearest neighbors of each candidate, and reject candidates with too many neighbors in the negative set. Then we gradually build clusters by applying <strong>iterative discriminative learning(SVM Learning)</strong> to each surviving candidate:<br><a href="http://graphics.cs.cmu.edu/projects/whatMakesParis/paris_sigg_reduced.pdf" target="_blank" rel="external">http://graphics.cs.cmu.edu/projects/whatMakesParis/paris_sigg_reduced.pdf</a></p>
+<p><img src="http://i.imgur.com/cBo8vQD.png" alt=""></p>
+<p>First, the initial geo-informativeness of each patch(a large number of randomly sampled candidate patches) is estimated by finding the top 20 nearest neighbor (NN) patches in the full dataset (both positive and negative), measured by normalized correlation. Patches portraying non-discriminative elements tend to match similar elements in both positive and negative set, while patches portraying a non-repeating element will have more-or-less random matches, also in both sets. Thus, we keep the candidate patches that have the highest proportion of their nearest neighbors in the positive set, while also rejecting near-duplicate patches (measured by spatial overlap of more than 30% between any 5 of their top 50 nearest neighbors). This reduces the number of candidates to about 1000.<br>Then iterative the SVM learning(Figure3 row2 - row4).</p>
+<p>b. Implementation Details:</p>
+<p>The implementation considers only square patches (although it would not be difficult to add other aspect ratios), and takes patches at scales ranging from 80-by-80 pixels all the way to height-of-image size. Patches are represented with standard HOG [Dalal and Triggs 2005] (8x8x31 cells), plus a 8x8 color image in L<em>a</em>b colorspace (a and b only). Thus the resulting feature has 8x8x33 = 2112 dimentions. During iterative learning, we use a soft-margin SVM with C fixed to 0.1. The full mining computation is quite expensive; a single city requires approximately 1, 800 CPU-hours. But since the algorithm is highly parallelizable, it can be done overnight on a cluster.</p>
+<p>c. Reference: </p>
+<p>Calculate the HOG+color descriptor then use SVM to train the model:<br><a href="https://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf" target="_blank" rel="external">https://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf</a></p>
+<p>HOG Learning: <a href="http://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html</a></p>
+<p>SVM Learning: <a href="http://blog.pluskid.org/?page_id=683" target="_blank" rel="external">http://blog.pluskid.org/?page_id=683</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/11/HOG-Learning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/04/11/HOG-Learning/" itemprop="url">HOG Learning</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-11T18:05:14-07:00">
+                2017-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="1-Reference"><a href="#1-Reference" class="headerlink" title="1.Reference"></a>1.Reference</h3><p><a href="https://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf" target="_blank" rel="external">https://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf</a></p>
+<h3 id="2-Learning"><a href="#2-Learning" class="headerlink" title="2.Learning"></a>2.Learning</h3><p><a href="http://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html</a><br>​​<br><img src="http://i.imgur.com/zATkMgT.png" alt=""></p>
+<p><strong>Algorithm implementation:</strong></p>
+<p><strong>a.Gradient computation</strong></p>
+<p>The first step of calculation in many feature detectors in image pre-processing is to ensure normalized color and gamma values. As Dalal and Triggs point out, however, this step can be omitted in HOG descriptor computation, as the ensuing descriptor normalization essentially achieves the same result. Image pre-processing thus provides little impact on performance. Instead, the first step of calculation is the computation of the gradient values. The most common method is to apply the 1-D centered, point discrete derivative mask in one or both of the horizontal and vertical directions. Specifically, this method requires filtering the color or intensity data of the image with the following filter kernels:</p>
+<p><img src="http://i.imgur.com/61dJ4bz.png" alt="">​​</p>
+<p>Dalal and Triggs tested other, more complex masks, such as the 3x3 Sobel mask or diagonal masks, but these masks generally performed more poorly in detecting humans in images. They also experimented with Gaussian smoothing before applying the derivative mask, but similarly found that omission of any smoothing performed better in practice.</p>
+<p><strong>b.Orientation binning</strong></p>
+<p>The second step of calculation is creating the cell histograms. Each pixel within the cell casts a weighted vote for an orientation-based histogram channel based on the values found in the gradient computation. The cells themselves can either be rectangular or radial in shape, and the histogram channels are evenly spread over 0 to 180 degrees or 0 to 360 degrees, depending on whether the gradient is “unsigned” or “signed”. Dalal and Triggs found that unsigned gradients used in conjunction with 9 histogram channels performed best in their human detection experiments. As for the vote weight, pixel contribution can either be the gradient magnitude itself, or some function of the magnitude. In tests, the gradient magnitude itself generally produces the best results. Other options for the vote weight could include the square root or square of the gradient magnitude, or some clipped version of the magnitude.</p>
+<p><strong>c.Descriptor blocks</strong></p>
+<p>To account for changes in illumination and contrast, the gradient strengths must be locally normalized, which requires grouping the cells together into larger, spatially connected blocks. The HOG descriptor is then the concatenated vector of the components of the normalized cell histograms from all of the block regions. <strong>These blocks typically overlap</strong>, meaning that each cell contributes more than once to the final descriptor. Two main block geometries exist: rectangular R-HOG blocks and circular C-HOG blocks. R-HOG blocks are generally square grids, represented by three parameters: the number of cells per block, the number of pixels per cell, and the number of channels per cell histogram. In the Dalal and Triggs human detection experiment, the optimal parameters were found to be <strong>four 8x8 pixels cells per block (16x16 pixels per block) with 9 histogram channels</strong>. Moreover, they found that some minor improvement in performance could be gained by applying a Gaussian spatial window within each block before tabulating histogram votes in order to weight pixels around the edge of the blocks less. The R-HOG blocks appear quite similar to the scale-invariant feature transform (SIFT) descriptors; however, despite their similar formation, R-HOG blocks are computed in dense grids at some single scale without orientation alignment, whereas SIFT descriptors are usually computed at sparse, scale-invariant key image points and are rotated to align orientation. In addition, the R-HOG blocks are used in conjunction to encode spatial form information, while SIFT descriptors are used singly.</p>
+<p><img src="http://i.imgur.com/GxOhRZ5.png" alt=""></p>
+<p><img src="http://i.imgur.com/4BlebGl.png" alt="">​​</p>
+<p>Nine Channel from 0-180 degree</p>
+<p><img src="http://i.imgur.com/LjHZ9DW.png" alt="">​​</p>
+<p>Blocks are overlap </p>
+<p>Circular HOG blocks (C-HOG) can be found in two variants: those with a single, central cell and those with an angularly divided central cell. In addition, these C-HOG blocks can be described with four parameters: the number of angular and radial bins, the radius of the center bin, and the expansion factor for the radius of additional radial bins. Dalal and Triggs found that the two main variants provided equal performance, and that two radial bins with four angular bins, a center radius of 4 pixels, and an expansion factor of 2 provided the best performance in their experimentation(to achieve a good performance, at last use this configure). Also, Gaussian weighting provided no benefit when used in conjunction with the C-HOG blocks. C-HOG blocks appear similar to shape context descriptors, but differ strongly in that C-HOG blocks contain cells with several orientation channels, while shape contexts only make use of a single edge presence count in their formulation.</p>
+<p><strong>d.Block normalization</strong></p>
+<p>Dalal and Triggs explored four different methods for block normalization. Let v be the non-normalized vector containing all histograms in a given block, ||v||_indexOfk be its k-norm for k={1,2}and e be some small constant (the exact value, hopefully, is unimportant). Then the normalization factor can be one of the following:</p>
+<p><img src="http://i.imgur.com/kzc0zlc.png" alt="">​​</p>
+<p>In addition, the scheme L2-hys can be computed by first taking the L2-norm, clipping the result, and then renormalizing. In their experiments, Dalal and Triggs found the L2-hys, L2-norm, and L1-sqrt schemes provide similar performance, while the L1-norm provides slightly less reliable performance; however, all four methods showed very significant improvement over the non-normalized data.</p>
+<p><strong>e.SVM classifier</strong></p>
+<p>The final step in object recognition using histogram of oriented gradient descriptors is to feed the descriptors into some recognition system based on supervised learning. The support vector machine (SVM) classifier is a binary classifier which looks for an optimal hyperplane as a decision function. Once trained on images containing some particular object, the SVM classifier can make decisions regarding the presence of an object, such as a human, in additional test images.</p>
+<p><strong>f.Neural Network Classifier</strong></p>
+<p>The feature of the gradient descriptors are also fed into the neural network classifiers which provides more accuracy in the classification comparing other classifiers (SVM). The neural classifiers can accept the descriptor feature as the binary function or the optimal function.</p>
+<h3 id="3-Flow-Chart"><a href="#3-Flow-Chart" class="headerlink" title="3. Flow Chart:"></a>3. Flow Chart:</h3><p><img src="http://i.imgur.com/mxtcSOS.png" alt="">​​</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
   </section>
 
   
@@ -409,14 +1535,23 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
 
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">tags</span>
+              
+            </div>
           
 
         </nav>
@@ -464,7 +1599,7 @@
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
