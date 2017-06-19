@@ -93,13 +93,13 @@
 
 
 
-<meta name="description" content="1.Referencehttps://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf 2.Learninghttp://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html​​ Algorithm implementation: a.Gradient computation The">
+<meta name="description" content="1.Referencehttps://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf 2.Learninghttp://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html???Algorithm implementation: a.Gradient computation The">
 <meta name="keywords" content="HOG">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HOG Learning">
 <meta property="og:url" content="http://yoursite.com/2017/04/11/HOG-Learning/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1.Referencehttps://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf 2.Learninghttp://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html​​ Algorithm implementation: a.Gradient computation The">
+<meta property="og:description" content="1.Referencehttps://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf 2.Learninghttp://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html???Algorithm implementation: a.Gradient computation The">
 <meta property="og:image" content="http://i.imgur.com/zATkMgT.png">
 <meta property="og:image" content="http://i.imgur.com/61dJ4bz.png">
 <meta property="og:image" content="http://i.imgur.com/GxOhRZ5.png">
@@ -107,10 +107,10 @@
 <meta property="og:image" content="http://i.imgur.com/LjHZ9DW.png">
 <meta property="og:image" content="http://i.imgur.com/kzc0zlc.png">
 <meta property="og:image" content="http://i.imgur.com/mxtcSOS.png">
-<meta property="og:updated_time" content="2017-04-12T01:34:24.199Z">
+<meta property="og:updated_time" content="2017-06-19T20:02:44.821Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HOG Learning">
-<meta name="twitter:description" content="1.Referencehttps://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf 2.Learninghttp://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html​​ Algorithm implementation: a.Gradient computation The">
+<meta name="twitter:description" content="1.Referencehttps://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf 2.Learninghttp://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html???Algorithm implementation: a.Gradient computation The">
 <meta name="twitter:image" content="http://i.imgur.com/zATkMgT.png">
 
 
@@ -211,7 +211,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -221,7 +221,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -291,7 +291,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-11T18:05:14-07:00">
                 2017-04-11
@@ -303,6 +303,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">in</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Basic-Knowledge/" itemprop="url" rel="index">
+                    <span itemprop="name">Basic Knowledge</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -329,31 +351,30 @@
 
       
         <h3 id="1-Reference"><a href="#1-Reference" class="headerlink" title="1.Reference"></a>1.Reference</h3><p><a href="https://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf" target="_blank" rel="external">https://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf</a></p>
-<h3 id="2-Learning"><a href="#2-Learning" class="headerlink" title="2.Learning"></a>2.Learning</h3><p><a href="http://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html</a><br>​​<br><img src="http://i.imgur.com/zATkMgT.png" alt=""></p>
-<p><strong>Algorithm implementation:</strong></p>
+<h3 id="2-Learning"><a href="#2-Learning" class="headerlink" title="2.Learning"></a>2.Learning</h3><p><a href="http://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html</a><br>??<br><img src="http://i.imgur.com/zATkMgT.png" alt=""><br>?<br><strong>Algorithm implementation:</strong></p>
 <p><strong>a.Gradient computation</strong></p>
-<p>The first step of calculation in many feature detectors in image pre-processing is to ensure normalized color and gamma values. As Dalal and Triggs point out, however, this step can be omitted in HOG descriptor computation, as the ensuing descriptor normalization essentially achieves the same result. Image pre-processing thus provides little impact on performance. Instead, the first step of calculation is the computation of the gradient values. The most common method is to apply the 1-D centered, point discrete derivative mask in one or both of the horizontal and vertical directions. Specifically, this method requires filtering the color or intensity data of the image with the following filter kernels:</p>
-<p><img src="http://i.imgur.com/61dJ4bz.png" alt="">​​</p>
-<p>Dalal and Triggs tested other, more complex masks, such as the 3x3 Sobel mask or diagonal masks, but these masks generally performed more poorly in detecting humans in images. They also experimented with Gaussian smoothing before applying the derivative mask, but similarly found that omission of any smoothing performed better in practice.</p>
+<p>The first step of calculation in many feature detectors in image pre-processing is to ensure normalized color and gamma values. As Dalal and Triggs point out, however, this step can be omitted in HOG descriptor computation, as the ensuing descriptor normalization essentially achieves the same result. Image pre-processing thus provides little impact on performance. Instead, the first step of calculation is the computation of the gradient values. The most common method is to apply the 1-D centered, point discrete?derivative mask?in one or both of the horizontal and vertical directions. Specifically, this method requires filtering the color or intensity data of the image with the following filter kernels:</p>
+<p><img src="http://i.imgur.com/61dJ4bz.png" alt="">??</p>
+<p>Dalal and Triggs tested other, more complex masks, such as the 3x3?Sobel mask?or diagonal masks, but these masks generally performed more poorly in detecting humans in images. They also experimented with?Gaussian smoothing?before applying the derivative mask, but similarly found that omission of any smoothing performed better in practice.</p>
 <p><strong>b.Orientation binning</strong></p>
 <p>The second step of calculation is creating the cell histograms. Each pixel within the cell casts a weighted vote for an orientation-based histogram channel based on the values found in the gradient computation. The cells themselves can either be rectangular or radial in shape, and the histogram channels are evenly spread over 0 to 180 degrees or 0 to 360 degrees, depending on whether the gradient is “unsigned” or “signed”. Dalal and Triggs found that unsigned gradients used in conjunction with 9 histogram channels performed best in their human detection experiments. As for the vote weight, pixel contribution can either be the gradient magnitude itself, or some function of the magnitude. In tests, the gradient magnitude itself generally produces the best results. Other options for the vote weight could include the square root or square of the gradient magnitude, or some clipped version of the magnitude.</p>
 <p><strong>c.Descriptor blocks</strong></p>
-<p>To account for changes in illumination and contrast, the gradient strengths must be locally normalized, which requires grouping the cells together into larger, spatially connected blocks. The HOG descriptor is then the concatenated vector of the components of the normalized cell histograms from all of the block regions. <strong>These blocks typically overlap</strong>, meaning that each cell contributes more than once to the final descriptor. Two main block geometries exist: rectangular R-HOG blocks and circular C-HOG blocks. R-HOG blocks are generally square grids, represented by three parameters: the number of cells per block, the number of pixels per cell, and the number of channels per cell histogram. In the Dalal and Triggs human detection experiment, the optimal parameters were found to be <strong>four 8x8 pixels cells per block (16x16 pixels per block) with 9 histogram channels</strong>. Moreover, they found that some minor improvement in performance could be gained by applying a Gaussian spatial window within each block before tabulating histogram votes in order to weight pixels around the edge of the blocks less. The R-HOG blocks appear quite similar to the scale-invariant feature transform (SIFT) descriptors; however, despite their similar formation, R-HOG blocks are computed in dense grids at some single scale without orientation alignment, whereas SIFT descriptors are usually computed at sparse, scale-invariant key image points and are rotated to align orientation. In addition, the R-HOG blocks are used in conjunction to encode spatial form information, while SIFT descriptors are used singly.</p>
+<p>To account for changes in illumination and contrast, the gradient strengths must be locally normalized, which requires grouping the cells together into larger, spatially connected blocks. The HOG descriptor is then the concatenated vector of the components of the normalized cell histograms from all of the block regions. <strong>These blocks typically overlap</strong>, meaning that each cell contributes more than once to the final descriptor. Two main block geometries exist: rectangular R-HOG blocks and circular C-HOG blocks. R-HOG blocks are generally square grids, represented by three parameters: the number of cells per block, the number of pixels per cell, and the number of channels per cell histogram. In the Dalal and Triggs human detection experiment, the optimal parameters were found to be <strong>four 8x8 pixels cells per block (16x16 pixels per block) with 9 histogram channels</strong>. Moreover, they found that some minor improvement in performance could be gained by applying a Gaussian spatial window within each block before tabulating histogram votes in order to weight pixels around the edge of the blocks less. The R-HOG blocks appear quite similar to the?scale-invariant feature transform?(SIFT) descriptors; however, despite their similar formation, R-HOG blocks are computed in dense grids at some single scale without orientation alignment, whereas SIFT descriptors are usually computed at sparse, scale-invariant key image points and are rotated to align orientation. In addition, the R-HOG blocks are used in conjunction to encode spatial form information, while SIFT descriptors are used singly.</p>
 <p><img src="http://i.imgur.com/GxOhRZ5.png" alt=""></p>
-<p><img src="http://i.imgur.com/4BlebGl.png" alt="">​​</p>
+<p><img src="http://i.imgur.com/4BlebGl.png" alt="">??</p>
 <p>Nine Channel from 0-180 degree</p>
-<p><img src="http://i.imgur.com/LjHZ9DW.png" alt="">​​</p>
-<p>Blocks are overlap </p>
-<p>Circular HOG blocks (C-HOG) can be found in two variants: those with a single, central cell and those with an angularly divided central cell. In addition, these C-HOG blocks can be described with four parameters: the number of angular and radial bins, the radius of the center bin, and the expansion factor for the radius of additional radial bins. Dalal and Triggs found that the two main variants provided equal performance, and that two radial bins with four angular bins, a center radius of 4 pixels, and an expansion factor of 2 provided the best performance in their experimentation(to achieve a good performance, at last use this configure). Also, Gaussian weighting provided no benefit when used in conjunction with the C-HOG blocks. C-HOG blocks appear similar to shape context descriptors, but differ strongly in that C-HOG blocks contain cells with several orientation channels, while shape contexts only make use of a single edge presence count in their formulation.</p>
+<p><img src="http://i.imgur.com/LjHZ9DW.png" alt="">??</p>
+<p>Blocks are overlap?</p>
+<p>Circular HOG blocks (C-HOG) can be found in two variants: those with a single, central cell and those with an angularly divided central cell. In addition, these C-HOG blocks can be described with four parameters: the number of angular and radial bins, the radius of the center bin, and the expansion factor for the radius of additional radial bins. Dalal and Triggs found that the two main variants provided equal performance, and that two radial bins with four angular bins, a center radius of 4 pixels, and an expansion factor of 2 provided the best performance in their experimentation(to achieve a good performance, at last use this configure). Also, Gaussian weighting provided no benefit when used in conjunction with the C-HOG blocks. C-HOG blocks appear similar to?shape context?descriptors, but differ strongly in that C-HOG blocks contain cells with several orientation channels, while shape contexts only make use of a single edge presence count in their formulation.</p>
 <p><strong>d.Block normalization</strong></p>
-<p>Dalal and Triggs explored four different methods for block normalization. Let v be the non-normalized vector containing all histograms in a given block, ||v||_indexOfk be its k-norm for k={1,2}and e be some small constant (the exact value, hopefully, is unimportant). Then the normalization factor can be one of the following:</p>
-<p><img src="http://i.imgur.com/kzc0zlc.png" alt="">​​</p>
+<p>Dalal and Triggs explored four different methods for block normalization. Let v be the non-normalized vector containing all histograms in a given block, ||v||_indexOfk?be its?k-norm for k={1,2}and e be some small constant (the exact value, hopefully, is unimportant). Then the normalization factor can be one of the following:</p>
+<p><img src="http://i.imgur.com/kzc0zlc.png" alt="">??</p>
 <p>In addition, the scheme L2-hys can be computed by first taking the L2-norm, clipping the result, and then renormalizing. In their experiments, Dalal and Triggs found the L2-hys, L2-norm, and L1-sqrt schemes provide similar performance, while the L1-norm provides slightly less reliable performance; however, all four methods showed very significant improvement over the non-normalized data.</p>
 <p><strong>e.SVM classifier</strong></p>
-<p>The final step in object recognition using histogram of oriented gradient descriptors is to feed the descriptors into some recognition system based on supervised learning. The support vector machine (SVM) classifier is a binary classifier which looks for an optimal hyperplane as a decision function. Once trained on images containing some particular object, the SVM classifier can make decisions regarding the presence of an object, such as a human, in additional test images.</p>
+<p>The final step in object recognition using histogram of oriented gradient descriptors is to feed the descriptors into some recognition system based on supervised learning. The?support vector machine?(SVM) classifier is a binary classifier which looks for an optimal hyperplane as a decision function. Once trained on images containing some particular object, the SVM classifier can make decisions regarding the presence of an object, such as a human, in additional test images.</p>
 <p><strong>f.Neural Network Classifier</strong></p>
 <p>The feature of the gradient descriptors are also fed into the neural network classifiers which provides more accuracy in the classification comparing other classifiers (SVM). The neural classifiers can accept the descriptor feature as the binary function or the optimal function.</p>
-<h3 id="3-Flow-Chart"><a href="#3-Flow-Chart" class="headerlink" title="3. Flow Chart:"></a>3. Flow Chart:</h3><p><img src="http://i.imgur.com/mxtcSOS.png" alt="">​​</p>
+<h3 id="3-Flow-Chart"><a href="#3-Flow-Chart" class="headerlink" title="3. Flow Chart:"></a>3. Flow Chart:</h3><p><img src="http://i.imgur.com/mxtcSOS.png" alt=""></p>
 
       
     </div>
@@ -453,10 +474,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -477,11 +498,20 @@
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
                 <span class="site-state-item-count">9</span>
-                <span class="site-state-item-name">posts</span>
+                <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
           
 
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Kategorien</span>
+              
+            </div>
           
 
           
@@ -490,7 +520,7 @@
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">tags</span>
+                <span class="site-state-item-name">Tags</span>
               
             </div>
           
@@ -556,7 +586,7 @@
 
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
