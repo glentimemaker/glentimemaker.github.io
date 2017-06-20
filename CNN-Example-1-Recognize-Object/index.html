@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Object Recognition," />
+  <meta name="keywords" content="CNN," />
 
 
 
@@ -93,17 +93,29 @@
 
 
 
-<meta name="description" content="Part I Computer Vision Field Leaders：http://mp.weixin.qq.com/s?__biz=MzAwMTA3MzM4Nw==&amp;amp;mid=2649439592&amp;amp;idx=1&amp;amp;sn=fdb687300e4a930fdd08c23d8816bbd8&amp;amp;chksm=82c0d4ecb5b75dfae69dd0a219916ab8533">
-<meta name="keywords" content="Object Recognition">
+<meta name="description" content="This article gives a high level overview for the process of recognizing the object by neural network. Step 1To be more clever, we could run this algorithm multiple times with different of weights that">
+<meta name="keywords" content="CNN">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Object Detection Progress">
-<meta property="og:url" content="http://glentimemaker.github.io/2017/05/04/Object-Detection-Progress/index.html">
+<meta property="og:title" content="CNN Example#1 Recognize Object">
+<meta property="og:url" content="http://glentimemaker.github.io/CNN-Example-1-Recognize-Object/index.html">
 <meta property="og:site_name" content="Research Blog">
-<meta property="og:description" content="Part I Computer Vision Field Leaders：http://mp.weixin.qq.com/s?__biz=MzAwMTA3MzM4Nw==&amp;amp;mid=2649439592&amp;amp;idx=1&amp;amp;sn=fdb687300e4a930fdd08c23d8816bbd8&amp;amp;chksm=82c0d4ecb5b75dfae69dd0a219916ab8533">
-<meta property="og:updated_time" content="2017-05-16T22:22:02.807Z">
+<meta property="og:description" content="This article gives a high level overview for the process of recognizing the object by neural network. Step 1To be more clever, we could run this algorithm multiple times with different of weights that">
+<meta property="og:image" content="http://i.imgur.com/REGmPoc.png">
+<meta property="og:image" content="http://i.imgur.com/te75No2.png">
+<meta property="og:image" content="http://i.imgur.com/Vs1VvNa.png">
+<meta property="og:image" content="http://i.imgur.com/H3jwRtH.jpg">
+<meta property="og:image" content="http://i.imgur.com/gnBVI2g.png">
+<meta property="og:image" content="http://i.imgur.com/DyWjrG2.jpg">
+<meta property="og:image" content="http://i.imgur.com/R2hRcJx.png">
+<meta property="og:image" content="http://i.imgur.com/zvLauA8.png">
+<meta property="og:image" content="http://i.imgur.com/MIyswbA.png">
+<meta property="og:image" content="http://i.imgur.com/Cb5Uyhu.png">
+<meta property="og:image" content="http://i.imgur.com/VHYdTDR.png">
+<meta property="og:updated_time" content="2017-06-19T00:16:34.685Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Object Detection Progress">
-<meta name="twitter:description" content="Part I Computer Vision Field Leaders：http://mp.weixin.qq.com/s?__biz=MzAwMTA3MzM4Nw==&amp;amp;mid=2649439592&amp;amp;idx=1&amp;amp;sn=fdb687300e4a930fdd08c23d8816bbd8&amp;amp;chksm=82c0d4ecb5b75dfae69dd0a219916ab8533">
+<meta name="twitter:title" content="CNN Example#1 Recognize Object">
+<meta name="twitter:description" content="This article gives a high level overview for the process of recognizing the object by neural network. Step 1To be more clever, we could run this algorithm multiple times with different of weights that">
+<meta name="twitter:image" content="http://i.imgur.com/REGmPoc.png">
 
 
 
@@ -131,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://glentimemaker.github.io/2017/05/04/Object-Detection-Progress/"/>
+  <link rel="canonical" href="http://glentimemaker.github.io/CNN-Example-1-Recognize-Object/"/>
 
 
 
 
 
-  <title>Object Detection Progress | Research Blog</title>
+  <title>CNN Example#1 Recognize Object | Research Blog</title>
   
 
 
@@ -309,7 +321,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://glentimemaker.github.io/2017/05/04/Object-Detection-Progress/">
+    <link itemprop="mainEntityOfPage" href="http://glentimemaker.github.io/CNN-Example-1-Recognize-Object/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chenlei Zhang">
@@ -326,7 +338,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Object Detection Progress</h1>
+          <h1 class="post-title" itemprop="name headline">CNN Example#1 Recognize Object</h1>
         
 
         <div class="post-meta">
@@ -338,8 +350,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-04T15:51:19-07:00">
-                2017-05-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-18T16:48:03-07:00">
+                2017-06-18
               </time>
             
 
@@ -357,8 +369,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/05/04/Object-Detection-Progress/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://glentimemaker.github.io/2017/05/04/Object-Detection-Progress/" itemprop="commentCount">0</span> comments
+                <a href="/CNN-Example-1-Recognize-Object/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://glentimemaker.github.io/CNN-Example-1-Recognize-Object/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -366,7 +378,7 @@
 
           
           
-             <span id="/2017/05/04/Object-Detection-Progress/" class="leancloud_visitors" data-flag-title="Object Detection Progress">
+             <span id="/CNN-Example-1-Recognize-Object/" class="leancloud_visitors" data-flag-title="CNN Example#1 Recognize Object">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -394,55 +406,38 @@
       
 
       
-        <h3 id="Part-I-Computer-Vision-Field-Leaders："><a href="#Part-I-Computer-Vision-Field-Leaders：" class="headerlink" title="Part I Computer Vision Field Leaders："></a>Part I Computer Vision Field Leaders：</h3><p><a href="http://mp.weixin.qq.com/s?__biz=MzAwMTA3MzM4Nw==&amp;mid=2649439592&amp;idx=1&amp;sn=fdb687300e4a930fdd08c23d8816bbd8&amp;chksm=82c0d4ecb5b75dfae69dd0a219916ab8533da9a6d02d3c7cfbcc5323579c16033bba7407f2b5&amp;scene=21#wechat_redirect" target="_blank" rel="external">http://mp.weixin.qq.com/s?__biz=MzAwMTA3MzM4Nw==&amp;mid=2649439592&amp;idx=1&amp;sn=fdb687300e4a930fdd08c23d8816bbd8&amp;chksm=82c0d4ecb5b75dfae69dd0a219916ab8533da9a6d02d3c7cfbcc5323579c16033bba7407f2b5&amp;scene=21#wechat_redirect</a></p>
-<p><strong>David Marr(1945-1980)</strong> : </p>
-<p>He laid the groundwork of computer vision. &lt;<vision：a computational="" investigation="" into="" the="" human="" representation="" and="" processing="" of="" visual="" information="">&gt;  </vision：a></p>
-<ol>
-<li><p>Three major levels of CV: Express(use math to express the problem), Algorithm(to solve the problem), Implement(can be implemented in CPU, DSP or NN)</p>
-</li>
-<li><p>What is computed in CV: primal sketch, 2 1/2 D sketch, 3D sketch, including texture, 3D vision, motion analysis, surface shape.</p>
-</li>
-<li><p>CV is the “progress” of learning the image, is not the result. The longer you observe the image, the more information you will get. 视觉是受任务驱动的，而任务是时刻在改变之中。 视觉求解不是打一个固定的靶子， 而是打一个运动目标。</p>
-</li>
-</ol>
-<p><strong>King-Sun Fu 傅京孫(1930-1985)</strong></p>
-<ol>
-<li>Syntactic Pattern Recognition</li>
-<li>Bottom-up and Top-down</li>
-</ol>
-<p><strong>Ulf Grenander (1923-2016)</strong></p>
-<p>Pattern Theory( use math and statistic)</p>
-<p>Proposed analysis-by-synthesis (let the model to generate a image then tell the different between the generated image and the real-world image, then you will know whether this model is a great model) </p>
-<h3 id="Part-II-Time-Line"><a href="#Part-II-Time-Line" class="headerlink" title="Part II Time Line"></a>Part II Time Line</h3><h3 id="1999"><a href="#1999" class="headerlink" title="1999"></a>1999</h3><p><strong>Scale Invariant Feature Transform(SIFT)</strong></p>
-<p>(improved in 2004)</p>
-<ul>
-<li>detector</li>
-<li>descriptor</li>
-</ul>
-<p>Based on points describe.</p>
-<h3 id="Feature-Based-Descriptor-1995-2010"><a href="#Feature-Based-Descriptor-1995-2010" class="headerlink" title="Feature Based Descriptor (1995~2010)"></a>Feature Based Descriptor (1995~2010)</h3><p><strong>1. Shape Context 2002</strong></p>
-<p>Used in MNIST.</p>
-<p><strong>2. HOG 2005</strong></p>
-<p>Describe the whole patch.</p>
-<p><strong>3. Spin Image 1997-&gt;1999</strong></p>
-<p>A descriptor of 3D mesh, used in surface matching.</p>
-<p><strong>4. STIP (Space time interest points) 2005; HOF (Histogram of oriented optical flow, 2009); MBH (motion boundary histogram, 2013)</strong></p>
-<h3 id="Object-Recognition-2005-2010"><a href="#Object-Recognition-2005-2010" class="headerlink" title="Object Recognition 2005~2010"></a>Object Recognition 2005~2010</h3><p><strong>1. LDA (Latent Dirichlet Allocation) 2003</strong></p>
-<p>Unsupervised topic modeling, BoW(bag of visual words) algorithm.</p>
-<p><strong>2. SPM (Spatial Pyramid Matching)</strong></p>
-<p>Use spatial grid to separate the image into patches, then calculate the BoW histogram, then combine them together, thus those encoded vector descriptor will have spatial information.</p>
-<p><strong>3. Image Encoding Method based on Bow 2006~2009</strong></p>
-<p>Sparse coding, Fisher vector to improve BoW (use image encoding)</p>
-<p><strong>4. PMK (pyramid matching kernel)</strong></p>
-<p><strong>5. DPM (deformable parts models) 2010</strong></p>
-<h3 id="Deep-Learning-2010-2015"><a href="#Deep-Learning-2010-2015" class="headerlink" title="Deep Learning 2010~2015"></a>Deep Learning 2010~2015</h3><p>Doesn’t need the structure information of the object, multiple layers.</p>
-<p>n* (convolution layer + pooling layer) + several fully connected layers</p>
-<p><strong>1. OverFeat</strong></p>
-<ul>
-<li>Step 1: Use slide window to get multi-scales ROI. Classify each region by CNN.</li>
-<li>Step 2: Use regression model to estimate the location of the object. Use bounding box to box the object.</li>
-<li>Combine the bounding boxes. </li>
-</ul>
+        <p>This article gives a high level overview for the process of recognizing the object by neural network.</p>
+<h3 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h3><p>To be more clever, we could run this algorithm multiple times with different of weights that each capture <strong>different edge cases</strong>:</p>
+<p><img src="http://i.imgur.com/REGmPoc.png" alt=""></p>
+<h3 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h3><p>Let’s combine our four attempts to guess into one big diagram:</p>
+<p><img src="http://i.imgur.com/te75No2.png" alt=""></p>
+<h3 id="Step-3"><a href="#Step-3" class="headerlink" title="Step 3"></a>Step 3</h3><p>Back propagation, using gradient descent algorithm which takes consider of the Cost Function.</p>
+<h3 id="Step-4"><a href="#Step-4" class="headerlink" title="Step 4"></a>Step 4</h3><p>Convolution (Make the result translation invariant)</p>
+<p><strong>1. Break the image into overlapping image tiles</strong></p>
+<p><img src="http://i.imgur.com/Vs1VvNa.png" alt=""></p>
+<p>Why we split the image into tiles? Because:</p>
+<p><img src="http://i.imgur.com/H3jwRtH.jpg" alt=""></p>
+<p>Fully connected NN: 1000 × 1000 × 10^6 = 10^12<br>Locally connected NN: 10 × 10 × 10^6 = 10^8</p>
+<p><strong>2. Feed each image tile into a small neural network</strong></p>
+<p>We’ll keep the same neural network weights for every single tile in the same original image. In other words, we are treating every image tile equally(Share the weights). If something interesting appears in any given tile, we’ll mark that tile as interesting.</p>
+<p><img src="http://i.imgur.com/gnBVI2g.png" alt=""></p>
+<p>Why we share the weight?</p>
+<p><img src="http://i.imgur.com/DyWjrG2.jpg" alt=""></p>
+<p>Convolutional N: 10 x 10 x 100= 10k</p>
+<p><strong>3. Save the results from each tile into a new array</strong></p>
+<p><img src="http://i.imgur.com/R2hRcJx.png" alt=""></p>
+<p>Convolution process:</p>
+<p><img src="http://i.imgur.com/zvLauA8.png" alt=""></p>
+<p><strong>4. Downsampling</strong></p>
+<p>Use max pooling method to look at each 2x2 square of the array and keep the biggest number, which means to keep the most interesting bit.</p>
+<p><img src="http://i.imgur.com/MIyswbA.png" alt=""></p>
+<p><strong>5. Do prediction</strong></p>
+<p>We can use that small array as input into another neural network, this final neural network will decide if the image is or isn’t a match:</p>
+<p><img src="http://i.imgur.com/Cb5Uyhu.png" alt=""></p>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h2><p>When solving problems in the real world, these steps can be combined and stacked as many times as you want! You can have two, three or even ten convolution layers. You can throw in max pooling wherever you want to reduce the size of your data.</p>
+<p>The basic idea is to start with a large image and continually boil it down, step-by-step, until you finally have a single result. The more convolution steps you have, the more <strong>complicated features</strong> your network will be able to learn to recognize.</p>
+<p>For example, the first convolution step might learn to recognize sharp edges, the second convolution step might recognize beaks using it’s knowledge of sharp edges, the third step might recognize entire birds using it’s knowledge of beaks, etc.</p>
+<p><img src="http://i.imgur.com/VHYdTDR.png" alt=""></p>
 
       
     </div>
@@ -472,7 +467,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Object-Recognition/" rel="tag"># Object Recognition</a>
+            <a href="/tags/CNN/" rel="tag"># CNN</a>
           
         </div>
       
@@ -485,8 +480,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/17/Object-Detection-Methods/" rel="next" title="Object Detection Methods">
-                <i class="fa fa-chevron-left"></i> Object Detection Methods
+              <a href="/Training-MNIST-dataset-by-TensorFlow/" rel="next" title="Training MNIST dataset by TensorFlow">
+                <i class="fa fa-chevron-left"></i> Training MNIST dataset by TensorFlow
               </a>
             
           </div>
@@ -495,8 +490,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/06/18/Training-MNIST-dataset-by-TensorFlow/" rel="prev" title="Training MNIST dataset by TensorFlow">
-                Training MNIST dataset by TensorFlow <i class="fa fa-chevron-right"></i>
+              <a href="/Caffe-Installation-in-Ubuntu-14-04/" rel="prev" title="Caffe Installation in Ubuntu 14.04">
+                Caffe Installation in Ubuntu 14.04 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -682,7 +677,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Part-I-Computer-Vision-Field-Leaders："><span class="nav-number">1.</span> <span class="nav-text">Part I Computer Vision Field Leaders：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Part-II-Time-Line"><span class="nav-number">2.</span> <span class="nav-text">Part II Time Line</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1999"><span class="nav-number">3.</span> <span class="nav-text">1999</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Feature-Based-Descriptor-1995-2010"><span class="nav-number">4.</span> <span class="nav-text">Feature Based Descriptor (1995~2010)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Object-Recognition-2005-2010"><span class="nav-number">5.</span> <span class="nav-text">Object Recognition 2005~2010</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deep-Learning-2010-2015"><span class="nav-number">6.</span> <span class="nav-text">Deep Learning 2010~2015</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-1"><span class="nav-number">1.</span> <span class="nav-text">Step 1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-2"><span class="nav-number">2.</span> <span class="nav-text">Step 2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-3"><span class="nav-number">3.</span> <span class="nav-text">Step 3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Step-4"><span class="nav-number">4.</span> <span class="nav-text">Step 4</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tips"><span class="nav-number"></span> <span class="nav-text">Tips</span></a></div>
             
 
           </div>
@@ -839,9 +834,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://glentimemaker.github.io/2017/05/04/Object-Detection-Progress/';
-          this.page.identifier = '2017/05/04/Object-Detection-Progress/';
-          this.page.title = 'Object Detection Progress';
+          this.page.url = 'http://glentimemaker.github.io/CNN-Example-1-Recognize-Object/';
+          this.page.identifier = 'CNN-Example-1-Recognize-Object/';
+          this.page.title = 'CNN Example#1 Recognize Object';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://glentimemaker-github-io.disqus.com/embed.js';

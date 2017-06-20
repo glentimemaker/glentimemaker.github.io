@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Object Recognition," />
+  <meta name="keywords" content="TensorFlow," />
 
 
 
@@ -93,23 +93,23 @@
 
 
 
-<meta name="description" content="I. The history of recognition  II. The process of object recognition http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf  Step 1. Image features  Step 2. Lea">
-<meta name="keywords" content="Object Recognition">
+<meta name="description" content="In this article, I will introduce MNIST data set and review the process of training the MINIST data set to get the model by using TensorFlow. MNIST Data SetThis database is a large database of handwri">
+<meta name="keywords" content="TensorFlow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Object Recognition Review">
-<meta property="og:url" content="http://glentimemaker.github.io/2017/04/17/Object-Recognition-Review/index.html">
+<meta property="og:title" content="Training MNIST dataset by TensorFlow">
+<meta property="og:url" content="http://glentimemaker.github.io/Training-MNIST-dataset-by-TensorFlow/index.html">
 <meta property="og:site_name" content="Research Blog">
-<meta property="og:description" content="I. The history of recognition  II. The process of object recognition http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf  Step 1. Image features  Step 2. Lea">
-<meta property="og:image" content="http://i.imgur.com/ylLpe9h.png">
-<meta property="og:image" content="http://i.imgur.com/mdNGms4.png">
-<meta property="og:image" content="http://i.imgur.com/SHM54HM.png">
-<meta property="og:image" content="http://i.imgur.com/koumuPo.png">
-<meta property="og:image" content="http://i.imgur.com/vNwwN9C.png">
-<meta property="og:updated_time" content="2017-04-17T07:28:24.873Z">
+<meta property="og:description" content="In this article, I will introduce MNIST data set and review the process of training the MINIST data set to get the model by using TensorFlow. MNIST Data SetThis database is a large database of handwri">
+<meta property="og:image" content="http://i.imgur.com/rwMpFVu.png">
+<meta property="og:image" content="http://i.imgur.com/6iflNXC.png">
+<meta property="og:image" content="http://i.imgur.com/wos2B91.png">
+<meta property="og:image" content="http://i.imgur.com/qXINxjp.png">
+<meta property="og:image" content="http://i.imgur.com/TqJkteC.png">
+<meta property="og:updated_time" content="2017-06-18T23:42:23.757Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Object Recognition Review">
-<meta name="twitter:description" content="I. The history of recognition  II. The process of object recognition http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf  Step 1. Image features  Step 2. Lea">
-<meta name="twitter:image" content="http://i.imgur.com/ylLpe9h.png">
+<meta name="twitter:title" content="Training MNIST dataset by TensorFlow">
+<meta name="twitter:description" content="In this article, I will introduce MNIST data set and review the process of training the MINIST data set to get the model by using TensorFlow. MNIST Data SetThis database is a large database of handwri">
+<meta name="twitter:image" content="http://i.imgur.com/rwMpFVu.png">
 
 
 
@@ -137,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://glentimemaker.github.io/2017/04/17/Object-Recognition-Review/"/>
+  <link rel="canonical" href="http://glentimemaker.github.io/Training-MNIST-dataset-by-TensorFlow/"/>
 
 
 
 
 
-  <title>Object Recognition Review | Research Blog</title>
+  <title>Training MNIST dataset by TensorFlow | Research Blog</title>
   
 
 
@@ -315,7 +315,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://glentimemaker.github.io/2017/04/17/Object-Recognition-Review/">
+    <link itemprop="mainEntityOfPage" href="http://glentimemaker.github.io/Training-MNIST-dataset-by-TensorFlow/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chenlei Zhang">
@@ -332,7 +332,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Object Recognition Review</h1>
+          <h1 class="post-title" itemprop="name headline">Training MNIST dataset by TensorFlow</h1>
         
 
         <div class="post-meta">
@@ -344,8 +344,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-17T00:16:52-07:00">
-                2017-04-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-18T16:30:22-07:00">
+                2017-06-18
               </time>
             
 
@@ -363,8 +363,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/04/17/Object-Recognition-Review/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://glentimemaker.github.io/2017/04/17/Object-Recognition-Review/" itemprop="commentCount">0</span> comments
+                <a href="/Training-MNIST-dataset-by-TensorFlow/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://glentimemaker.github.io/Training-MNIST-dataset-by-TensorFlow/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -372,7 +372,7 @@
 
           
           
-             <span id="/2017/04/17/Object-Recognition-Review/" class="leancloud_visitors" data-flag-title="Object Recognition Review">
+             <span id="/Training-MNIST-dataset-by-TensorFlow/" class="leancloud_visitors" data-flag-title="Training MNIST dataset by TensorFlow">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -400,50 +400,44 @@
       
 
       
-        <h3 id="I-The-history-of-recognition"><a href="#I-The-history-of-recognition" class="headerlink" title="I. The history of recognition"></a>I. The history of recognition</h3><p> <img src="http://i.imgur.com/ylLpe9h.png" alt=""></p>
-<h3 id="II-The-process-of-object-recognition"><a href="#II-The-process-of-object-recognition" class="headerlink" title="II. The process of object recognition"></a>II. The process of object recognition</h3><p><img src="http://i.imgur.com/mdNGms4.png" alt=""></p>
-<p><a href="http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf" target="_blank" rel="external">http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf </a></p>
-<p><strong>Step 1. Image features</strong></p>
-<p><img src="http://i.imgur.com/SHM54HM.png" alt=""></p>
-<p><strong>Step 2. Learning</strong></p>
-<p><em>A. Classification</em></p>
-<p>There are many methods to choose from:</p>
-<p>• K-nearest neighbor</p>
-<p>• SVM</p>
-<p>• Neural networks</p>
-<p>• Naïve Bayes</p>
-<p>• Bayesian network</p>
-<p>• Logic regression</p>
-<p>• Randomized Forests</p>
-<p>• Boosted Decision Trees</p>
-<p>• RBMs</p>
-<p>• Etc.</p>
-<h3 id="III-Typical-Method"><a href="#III-Typical-Method" class="headerlink" title="III. Typical Method"></a>III. Typical Method</h3><p><strong>A. Bags of Features</strong></p>
-<p><a href="http://www.cs.cornell.edu/courses/cs4670/2015sp/lectures/lec35_reco3_web.pdf" target="_blank" rel="external">http://www.cs.cornell.edu/courses/cs4670/2015sp/lectures/lec35_reco3_web.pdf</a></p>
-<p><em>(1) Origin</em></p>
-<p>Texture recognition:</p>
-<p>• Texture is characterized by the repetition of basic elements or textons</p>
-<p>• For stochastic textures, the identity of the textons, not their spatial arrangement, matters<br>Julesz, 1981; Cula &amp; Dana, 2001; Leung &amp; Malik 2001; Mori, Belongie &amp; Malik, 2001; Schmid 2001; Varma &amp; Zisserman, 2002, 2003; Lazebnik, Schmid &amp; Ponce, 2003</p>
-<p>Bag-of-words models:</p>
-<p>Orderless document representation: frequencies of words from a dictionary. Salton &amp; McGill (1983)</p>
-<p><em>(2) Outline</em></p>
-<p><img src="http://i.imgur.com/koumuPo.png" alt=""></p>
-<p>Step 2: Using K-means clustering</p>
-<p>Step 4: K nearest neighbors</p>
-<p><strong>B. CNN(Convolutional Neural Network)</strong></p>
-<p><img src="http://i.imgur.com/vNwwN9C.png" alt=""></p>
-<p><a href="http://cs231n.github.io/convolutional-networks/#overview" target="_blank" rel="external">http://cs231n.github.io/convolutional-networks/#overview</a></p>
-<h3 id="IV-Data-Set"><a href="#IV-Data-Set" class="headerlink" title="IV. Data Set"></a>IV. Data Set</h3><p><strong>A. Pedestrian</strong></p>
-<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=5975165&amp;tag=1" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=5975165&amp;tag=1</a></p>
-<ol>
-<li>Caltech Pedestrian data set<br>P. Dolla´r, C. Wojek, B. Schiele, and P. Perona, “Pedestrian Detection: A Benchmark,” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2009.</li>
-<li>ETH:<br>A. Ess, B. Leibe, and L. Van Gool, “Depth and Appearance for Mobile Scene Analysis,” Proc. IEEE Int’l Conf. Computer Vision, 2007.</li>
-<li>TUB-Brussels<br>C. Wojek, S. Walk, and B. Schiele, “Multi-Cue Onboard Pedestrian Detection,” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2009</li>
-<li>Daimler<br>M. Enzweiler and D.M. Gavrila, “Monocular Pedestrian Detection: Survey and Experiments,” IEEE Trans. Pattern Analysis and Machine Intelligence, vol. 31, no. 12, pp. 2179- 2195, Dec. 2009.</li>
-<li>INRIA<br>N. Dalal and B. Triggs, “Histograms of Oriented Gradients for Human Detection,” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2005.</li>
-</ol>
-<p><strong>B. Vehicle</strong></p>
+        <p>In this article, I will introduce MNIST data set and review the process of training the MINIST data set to get the model by using TensorFlow.</p>
+<h3 id="MNIST-Data-Set"><a href="#MNIST-Data-Set" class="headerlink" title="MNIST Data Set"></a>MNIST Data Set</h3><p>This database is a large database of handwritten digits that is commonly used for training various image processing systems. This database contains 60,000 training images (mnist.train) and 10,000 testing images (mnist.test)</p>
+<p><img src="http://i.imgur.com/rwMpFVu.png" alt=""></p>
+<p>28x28 pixels in one image, we can use 28x28 = 784 dimensions vector to present this matrix.</p>
+<p><img src="http://i.imgur.com/6iflNXC.png" alt=""></p>
+<p>Mnist.train.xs represents 60000 training images.</p>
+<p><img src="http://i.imgur.com/wos2B91.png" alt=""></p>
+<p>Mnist.train.ys represents the label of the 60000 image. There’re 10 labels from 0 to 9. Each label is the real number shown in each image.</p>
+<h3 id="Methodology-Softmax-Regression"><a href="#Methodology-Softmax-Regression" class="headerlink" title="Methodology : Softmax Regression"></a>Methodology : Softmax Regression</h3><p>We use softmax regression to classify each type of writing.</p>
+<p><strong>1. The model of the learning</strong></p>
+<p><img src="http://i.imgur.com/qXINxjp.png" alt=""></p>
+<p><strong>2. Cost function</strong></p>
+<p><img src="http://i.imgur.com/TqJkteC.png" alt=""></p>
+<p><strong>3. Training Algorithm</strong></p>
+<p>Use Gradient Descent algorithm, which is backpropagation algorithm.<br>The backpropagation algorithm looks for the minimum of the error function in weight space using the method of gradient descent.</p>
+<h3 id="Using-TensorFlow"><a href="#Using-TensorFlow" class="headerlink" title="Using TensorFlow"></a>Using TensorFlow</h3><p><strong>Step 1:</strong></p>
+<p>Initialize &amp; start the model</p>
+<pre><code>init = tf.initialize_all_variables()
 
+sess = tf.Session()
+sess.run(init)
+</code></pre><p><strong>Step 2:</strong></p>
+<p>Training the model (Optimize the weights)</p>
+<pre><code>for i in range(1000):
+batch_xs, batch_ys = mnist.train.next_batch(100) // Stochastic training: Randomly use 100 data to train the model.
+
+sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
+
+And the train_step is:
+train_step = tf.train.GradientDescentOptimizer(0.01).minimize(cross_entropy)
+</code></pre><p><strong>Step 3:</strong></p>
+<p>Evaluate the model</p>
+<pre><code>correct_prediction = tf.equal(tf.argmax(y,1), tf.argmax(y_,1)) //y_ is the correct label
+
+accuracy = tf.reduce_mean(tf.cast(correct_prediction, &quot;float&quot;)) // The accuracy of the model
+
+print sess.run(accuracy, feed_dict={x: mnist.test.images, y_: mnist.test.labels}) // Print out the accuracy
+</code></pre>
       
     </div>
 
@@ -472,7 +466,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Object-Recognition/" rel="tag"># Object Recognition</a>
+            <a href="/tags/TensorFlow/" rel="tag"># TensorFlow</a>
           
         </div>
       
@@ -485,8 +479,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/17/Parsing-information-from-Google-Street-View-image/" rel="next" title="Parsing information from Google Street View image">
-                <i class="fa fa-chevron-left"></i> Parsing information from Google Street View image
+              <a href="/Object-Detection-Progress/" rel="next" title="Object Detection Progress">
+                <i class="fa fa-chevron-left"></i> Object Detection Progress
               </a>
             
           </div>
@@ -495,8 +489,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/17/Object-Detection-Methods/" rel="prev" title="Object Detection Methods">
-                Object Detection Methods <i class="fa fa-chevron-right"></i>
+              <a href="/CNN-Example-1-Recognize-Object/" rel="prev" title="CNN Example#1 Recognize Object">
+                CNN Example#1 Recognize Object <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -682,7 +676,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#I-The-history-of-recognition"><span class="nav-number">1.</span> <span class="nav-text">I. The history of recognition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#II-The-process-of-object-recognition"><span class="nav-number">2.</span> <span class="nav-text">II. The process of object recognition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#III-Typical-Method"><span class="nav-number">3.</span> <span class="nav-text">III. Typical Method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IV-Data-Set"><span class="nav-number">4.</span> <span class="nav-text">IV. Data Set</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#MNIST-Data-Set"><span class="nav-number">1.</span> <span class="nav-text">MNIST Data Set</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Methodology-Softmax-Regression"><span class="nav-number">2.</span> <span class="nav-text">Methodology : Softmax Regression</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Using-TensorFlow"><span class="nav-number">3.</span> <span class="nav-text">Using TensorFlow</span></a></li></ol></div>
             
 
           </div>
@@ -839,9 +833,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://glentimemaker.github.io/2017/04/17/Object-Recognition-Review/';
-          this.page.identifier = '2017/04/17/Object-Recognition-Review/';
-          this.page.title = 'Object Recognition Review';
+          this.page.url = 'http://glentimemaker.github.io/Training-MNIST-dataset-by-TensorFlow/';
+          this.page.identifier = 'Training-MNIST-dataset-by-TensorFlow/';
+          this.page.title = 'Training MNIST dataset by TensorFlow';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://glentimemaker-github-io.disqus.com/embed.js';

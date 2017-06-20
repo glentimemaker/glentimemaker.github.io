@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="HOG," />
+  <meta name="keywords" content="Object Recognition," />
 
 
 
@@ -93,25 +93,23 @@
 
 
 
-<meta name="description" content="1.Referencehttps://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf 2.Learninghttp://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html???Algorithm implementation: a.Gradient computation The">
-<meta name="keywords" content="HOG">
+<meta name="description" content="I. The history of recognition  II. The process of object recognition http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf  Step 1. Image features  Step 2. Lea">
+<meta name="keywords" content="Object Recognition">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HOG Learning">
-<meta property="og:url" content="http://glentimemaker.github.io/2017/04/11/HOG-Learning/index.html">
+<meta property="og:title" content="Object Recognition Review">
+<meta property="og:url" content="http://glentimemaker.github.io/Object-Recognition-Review/index.html">
 <meta property="og:site_name" content="Research Blog">
-<meta property="og:description" content="1.Referencehttps://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf 2.Learninghttp://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html???Algorithm implementation: a.Gradient computation The">
-<meta property="og:image" content="http://i.imgur.com/zATkMgT.png">
-<meta property="og:image" content="http://i.imgur.com/61dJ4bz.png">
-<meta property="og:image" content="http://i.imgur.com/GxOhRZ5.png">
-<meta property="og:image" content="http://i.imgur.com/4BlebGl.png">
-<meta property="og:image" content="http://i.imgur.com/LjHZ9DW.png">
-<meta property="og:image" content="http://i.imgur.com/kzc0zlc.png">
-<meta property="og:image" content="http://i.imgur.com/mxtcSOS.png">
-<meta property="og:updated_time" content="2017-06-19T20:02:44.821Z">
+<meta property="og:description" content="I. The history of recognition  II. The process of object recognition http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf  Step 1. Image features  Step 2. Lea">
+<meta property="og:image" content="http://i.imgur.com/ylLpe9h.png">
+<meta property="og:image" content="http://i.imgur.com/mdNGms4.png">
+<meta property="og:image" content="http://i.imgur.com/SHM54HM.png">
+<meta property="og:image" content="http://i.imgur.com/koumuPo.png">
+<meta property="og:image" content="http://i.imgur.com/vNwwN9C.png">
+<meta property="og:updated_time" content="2017-04-17T07:28:24.873Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HOG Learning">
-<meta name="twitter:description" content="1.Referencehttps://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf 2.Learninghttp://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html???Algorithm implementation: a.Gradient computation The">
-<meta name="twitter:image" content="http://i.imgur.com/zATkMgT.png">
+<meta name="twitter:title" content="Object Recognition Review">
+<meta name="twitter:description" content="I. The history of recognition  II. The process of object recognition http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf  Step 1. Image features  Step 2. Lea">
+<meta name="twitter:image" content="http://i.imgur.com/ylLpe9h.png">
 
 
 
@@ -139,13 +137,13 @@
 
 
 
-  <link rel="canonical" href="http://glentimemaker.github.io/2017/04/11/HOG-Learning/"/>
+  <link rel="canonical" href="http://glentimemaker.github.io/Object-Recognition-Review/"/>
 
 
 
 
 
-  <title>HOG Learning | Research Blog</title>
+  <title>Object Recognition Review | Research Blog</title>
   
 
 
@@ -317,7 +315,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://glentimemaker.github.io/2017/04/11/HOG-Learning/">
+    <link itemprop="mainEntityOfPage" href="http://glentimemaker.github.io/Object-Recognition-Review/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chenlei Zhang">
@@ -334,7 +332,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">HOG Learning</h1>
+          <h1 class="post-title" itemprop="name headline">Object Recognition Review</h1>
         
 
         <div class="post-meta">
@@ -346,8 +344,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-11T18:05:14-07:00">
-                2017-04-11
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-04-17T00:16:52-07:00">
+                2017-04-17
               </time>
             
 
@@ -357,28 +355,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Basic-Knowledge/" itemprop="url" rel="index">
-                    <span itemprop="name">Basic Knowledge</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -387,8 +363,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/04/11/HOG-Learning/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://glentimemaker.github.io/2017/04/11/HOG-Learning/" itemprop="commentCount">0</span> comments
+                <a href="/Object-Recognition-Review/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://glentimemaker.github.io/Object-Recognition-Review/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -396,7 +372,7 @@
 
           
           
-             <span id="/2017/04/11/HOG-Learning/" class="leancloud_visitors" data-flag-title="HOG Learning">
+             <span id="/Object-Recognition-Review/" class="leancloud_visitors" data-flag-title="Object Recognition Review">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -424,31 +400,49 @@
       
 
       
-        <h3 id="1-Reference"><a href="#1-Reference" class="headerlink" title="1.Reference"></a>1.Reference</h3><p><a href="https://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf" target="_blank" rel="external">https://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf</a></p>
-<h3 id="2-Learning"><a href="#2-Learning" class="headerlink" title="2.Learning"></a>2.Learning</h3><p><a href="http://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_60e6e3d50101bkpn.html</a><br>??<br><img src="http://i.imgur.com/zATkMgT.png" alt=""><br>?<br><strong>Algorithm implementation:</strong></p>
-<p><strong>a.Gradient computation</strong></p>
-<p>The first step of calculation in many feature detectors in image pre-processing is to ensure normalized color and gamma values. As Dalal and Triggs point out, however, this step can be omitted in HOG descriptor computation, as the ensuing descriptor normalization essentially achieves the same result. Image pre-processing thus provides little impact on performance. Instead, the first step of calculation is the computation of the gradient values. The most common method is to apply the 1-D centered, point discrete?derivative mask?in one or both of the horizontal and vertical directions. Specifically, this method requires filtering the color or intensity data of the image with the following filter kernels:</p>
-<p><img src="http://i.imgur.com/61dJ4bz.png" alt="">??</p>
-<p>Dalal and Triggs tested other, more complex masks, such as the 3x3?Sobel mask?or diagonal masks, but these masks generally performed more poorly in detecting humans in images. They also experimented with?Gaussian smoothing?before applying the derivative mask, but similarly found that omission of any smoothing performed better in practice.</p>
-<p><strong>b.Orientation binning</strong></p>
-<p>The second step of calculation is creating the cell histograms. Each pixel within the cell casts a weighted vote for an orientation-based histogram channel based on the values found in the gradient computation. The cells themselves can either be rectangular or radial in shape, and the histogram channels are evenly spread over 0 to 180 degrees or 0 to 360 degrees, depending on whether the gradient is “unsigned” or “signed”. Dalal and Triggs found that unsigned gradients used in conjunction with 9 histogram channels performed best in their human detection experiments. As for the vote weight, pixel contribution can either be the gradient magnitude itself, or some function of the magnitude. In tests, the gradient magnitude itself generally produces the best results. Other options for the vote weight could include the square root or square of the gradient magnitude, or some clipped version of the magnitude.</p>
-<p><strong>c.Descriptor blocks</strong></p>
-<p>To account for changes in illumination and contrast, the gradient strengths must be locally normalized, which requires grouping the cells together into larger, spatially connected blocks. The HOG descriptor is then the concatenated vector of the components of the normalized cell histograms from all of the block regions. <strong>These blocks typically overlap</strong>, meaning that each cell contributes more than once to the final descriptor. Two main block geometries exist: rectangular R-HOG blocks and circular C-HOG blocks. R-HOG blocks are generally square grids, represented by three parameters: the number of cells per block, the number of pixels per cell, and the number of channels per cell histogram. In the Dalal and Triggs human detection experiment, the optimal parameters were found to be <strong>four 8x8 pixels cells per block (16x16 pixels per block) with 9 histogram channels</strong>. Moreover, they found that some minor improvement in performance could be gained by applying a Gaussian spatial window within each block before tabulating histogram votes in order to weight pixels around the edge of the blocks less. The R-HOG blocks appear quite similar to the?scale-invariant feature transform?(SIFT) descriptors; however, despite their similar formation, R-HOG blocks are computed in dense grids at some single scale without orientation alignment, whereas SIFT descriptors are usually computed at sparse, scale-invariant key image points and are rotated to align orientation. In addition, the R-HOG blocks are used in conjunction to encode spatial form information, while SIFT descriptors are used singly.</p>
-<p><img src="http://i.imgur.com/GxOhRZ5.png" alt=""></p>
-<p><img src="http://i.imgur.com/4BlebGl.png" alt="">??</p>
-<p>Nine Channel from 0-180 degree</p>
-<p><img src="http://i.imgur.com/LjHZ9DW.png" alt="">??</p>
-<p>Blocks are overlap?</p>
-<p>Circular HOG blocks (C-HOG) can be found in two variants: those with a single, central cell and those with an angularly divided central cell. In addition, these C-HOG blocks can be described with four parameters: the number of angular and radial bins, the radius of the center bin, and the expansion factor for the radius of additional radial bins. Dalal and Triggs found that the two main variants provided equal performance, and that two radial bins with four angular bins, a center radius of 4 pixels, and an expansion factor of 2 provided the best performance in their experimentation(to achieve a good performance, at last use this configure). Also, Gaussian weighting provided no benefit when used in conjunction with the C-HOG blocks. C-HOG blocks appear similar to?shape context?descriptors, but differ strongly in that C-HOG blocks contain cells with several orientation channels, while shape contexts only make use of a single edge presence count in their formulation.</p>
-<p><strong>d.Block normalization</strong></p>
-<p>Dalal and Triggs explored four different methods for block normalization. Let v be the non-normalized vector containing all histograms in a given block, ||v||_indexOfk?be its?k-norm for k={1,2}and e be some small constant (the exact value, hopefully, is unimportant). Then the normalization factor can be one of the following:</p>
-<p><img src="http://i.imgur.com/kzc0zlc.png" alt="">??</p>
-<p>In addition, the scheme L2-hys can be computed by first taking the L2-norm, clipping the result, and then renormalizing. In their experiments, Dalal and Triggs found the L2-hys, L2-norm, and L1-sqrt schemes provide similar performance, while the L1-norm provides slightly less reliable performance; however, all four methods showed very significant improvement over the non-normalized data.</p>
-<p><strong>e.SVM classifier</strong></p>
-<p>The final step in object recognition using histogram of oriented gradient descriptors is to feed the descriptors into some recognition system based on supervised learning. The?support vector machine?(SVM) classifier is a binary classifier which looks for an optimal hyperplane as a decision function. Once trained on images containing some particular object, the SVM classifier can make decisions regarding the presence of an object, such as a human, in additional test images.</p>
-<p><strong>f.Neural Network Classifier</strong></p>
-<p>The feature of the gradient descriptors are also fed into the neural network classifiers which provides more accuracy in the classification comparing other classifiers (SVM). The neural classifiers can accept the descriptor feature as the binary function or the optimal function.</p>
-<h3 id="3-Flow-Chart"><a href="#3-Flow-Chart" class="headerlink" title="3. Flow Chart:"></a>3. Flow Chart:</h3><p><img src="http://i.imgur.com/mxtcSOS.png" alt=""></p>
+        <h3 id="I-The-history-of-recognition"><a href="#I-The-history-of-recognition" class="headerlink" title="I. The history of recognition"></a>I. The history of recognition</h3><p> <img src="http://i.imgur.com/ylLpe9h.png" alt=""></p>
+<h3 id="II-The-process-of-object-recognition"><a href="#II-The-process-of-object-recognition" class="headerlink" title="II. The process of object recognition"></a>II. The process of object recognition</h3><p><img src="http://i.imgur.com/mdNGms4.png" alt=""></p>
+<p><a href="http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf" target="_blank" rel="external">http://vision.stanford.edu/teaching/cs131_fall1617/lectures/lecture17_intro_objrecog_cs131.pdf </a></p>
+<p><strong>Step 1. Image features</strong></p>
+<p><img src="http://i.imgur.com/SHM54HM.png" alt=""></p>
+<p><strong>Step 2. Learning</strong></p>
+<p><em>A. Classification</em></p>
+<p>There are many methods to choose from:</p>
+<p>• K-nearest neighbor</p>
+<p>• SVM</p>
+<p>• Neural networks</p>
+<p>• Naïve Bayes</p>
+<p>• Bayesian network</p>
+<p>• Logic regression</p>
+<p>• Randomized Forests</p>
+<p>• Boosted Decision Trees</p>
+<p>• RBMs</p>
+<p>• Etc.</p>
+<h3 id="III-Typical-Method"><a href="#III-Typical-Method" class="headerlink" title="III. Typical Method"></a>III. Typical Method</h3><p><strong>A. Bags of Features</strong></p>
+<p><a href="http://www.cs.cornell.edu/courses/cs4670/2015sp/lectures/lec35_reco3_web.pdf" target="_blank" rel="external">http://www.cs.cornell.edu/courses/cs4670/2015sp/lectures/lec35_reco3_web.pdf</a></p>
+<p><em>(1) Origin</em></p>
+<p>Texture recognition:</p>
+<p>• Texture is characterized by the repetition of basic elements or textons</p>
+<p>• For stochastic textures, the identity of the textons, not their spatial arrangement, matters<br>Julesz, 1981; Cula &amp; Dana, 2001; Leung &amp; Malik 2001; Mori, Belongie &amp; Malik, 2001; Schmid 2001; Varma &amp; Zisserman, 2002, 2003; Lazebnik, Schmid &amp; Ponce, 2003</p>
+<p>Bag-of-words models:</p>
+<p>Orderless document representation: frequencies of words from a dictionary. Salton &amp; McGill (1983)</p>
+<p><em>(2) Outline</em></p>
+<p><img src="http://i.imgur.com/koumuPo.png" alt=""></p>
+<p>Step 2: Using K-means clustering</p>
+<p>Step 4: K nearest neighbors</p>
+<p><strong>B. CNN(Convolutional Neural Network)</strong></p>
+<p><img src="http://i.imgur.com/vNwwN9C.png" alt=""></p>
+<p><a href="http://cs231n.github.io/convolutional-networks/#overview" target="_blank" rel="external">http://cs231n.github.io/convolutional-networks/#overview</a></p>
+<h3 id="IV-Data-Set"><a href="#IV-Data-Set" class="headerlink" title="IV. Data Set"></a>IV. Data Set</h3><p><strong>A. Pedestrian</strong></p>
+<p><a href="http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=5975165&amp;tag=1" target="_blank" rel="external">http://ieeexplore.ieee.org.libproxy.sdsu.edu/stamp/stamp.jsp?arnumber=5975165&amp;tag=1</a></p>
+<ol>
+<li>Caltech Pedestrian data set<br>P. Dolla´r, C. Wojek, B. Schiele, and P. Perona, “Pedestrian Detection: A Benchmark,” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2009.</li>
+<li>ETH:<br>A. Ess, B. Leibe, and L. Van Gool, “Depth and Appearance for Mobile Scene Analysis,” Proc. IEEE Int’l Conf. Computer Vision, 2007.</li>
+<li>TUB-Brussels<br>C. Wojek, S. Walk, and B. Schiele, “Multi-Cue Onboard Pedestrian Detection,” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2009</li>
+<li>Daimler<br>M. Enzweiler and D.M. Gavrila, “Monocular Pedestrian Detection: Survey and Experiments,” IEEE Trans. Pattern Analysis and Machine Intelligence, vol. 31, no. 12, pp. 2179- 2195, Dec. 2009.</li>
+<li>INRIA<br>N. Dalal and B. Triggs, “Histograms of Oriented Gradients for Human Detection,” Proc. IEEE Conf. Computer Vision and Pattern Recognition, 2005.</li>
+</ol>
+<p><strong>B. Vehicle</strong></p>
 
       
     </div>
@@ -478,7 +472,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/HOG/" rel="tag"># HOG</a>
+            <a href="/tags/Object-Recognition/" rel="tag"># Object Recognition</a>
           
         </div>
       
@@ -491,8 +485,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/04/11/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/Parsing-information-from-Google-Street-View-image/" rel="next" title="Parsing information from Google Street View image">
+                <i class="fa fa-chevron-left"></i> Parsing information from Google Street View image
               </a>
             
           </div>
@@ -501,8 +495,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/04/17/Parsing-information-from-Google-Street-View-image/" rel="prev" title="Parsing information from Google Street View image">
-                Parsing information from Google Street View image <i class="fa fa-chevron-right"></i>
+              <a href="/Object-Detection-Methods/" rel="prev" title="Object Detection Methods">
+                Object Detection Methods <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -688,7 +682,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Reference"><span class="nav-number">1.</span> <span class="nav-text">1.Reference</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Learning"><span class="nav-number">2.</span> <span class="nav-text">2.Learning</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Flow-Chart"><span class="nav-number">3.</span> <span class="nav-text">3. Flow Chart:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#I-The-history-of-recognition"><span class="nav-number">1.</span> <span class="nav-text">I. The history of recognition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#II-The-process-of-object-recognition"><span class="nav-number">2.</span> <span class="nav-text">II. The process of object recognition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#III-Typical-Method"><span class="nav-number">3.</span> <span class="nav-text">III. Typical Method</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IV-Data-Set"><span class="nav-number">4.</span> <span class="nav-text">IV. Data Set</span></a></li></ol></div>
             
 
           </div>
@@ -845,9 +839,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://glentimemaker.github.io/2017/04/11/HOG-Learning/';
-          this.page.identifier = '2017/04/11/HOG-Learning/';
-          this.page.title = 'HOG Learning';
+          this.page.url = 'http://glentimemaker.github.io/Object-Recognition-Review/';
+          this.page.identifier = 'Object-Recognition-Review/';
+          this.page.title = 'Object Recognition Review';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://glentimemaker-github-io.disqus.com/embed.js';
