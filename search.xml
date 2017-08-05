@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Reading Note]]></title>
+    <url>%2FReading-Note%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>Learning Note</category>
+      </categories>
+      <tags>
+        <tag>Life Long Learning</tag>
+        <tag>Machine Learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Install and Use Vatic Annotation Tool]]></title>
     <url>%2FInstall-and-Use-Vatic-Annotation-Tool%2F</url>
     <content type="text"><![CDATA[##How to install Vatic in a easy way Vatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where bounding boxes are automatically interpolated in both size and position. Annotation is performed in a web browser, and annotations are stored in a MySQL database. For this, videos need to be locally published using command line interfacing. Extracting the annotation is also performed using the command line interface. The installation requires a lot of configurations, and it is super painful. The installation steps are shown in Vatic . Instead of installing it step by step manually and encountering lots of bugs, we can easily use other people’s docker environment and run it by VM. ###1. Install docker Step1: undate inner core: sudo apt-get install -y --install-recommends linux-generic-lts-trusty Step2: Use scripts to install the docker curl -sSL https://get.docker.com/ | sh ###2. Install and use Vatic reference: vatic-docker Step1: Create “data” folder in the directory where you want to run. Step2: Create “labels.txt” file in data folder. Put all the object types that you want to label on the first line separated by spaces. Step3: Create “video_in” folder in data folder, and put in the video you want to label. Step4: Run the vatic in docker: sudo docker run -it -p 8111:80 -v $PWD/data:/root/vatic/data npsvisionlab/vatic-docker /bin/bash -C /root/vatic/example.sh 8111 is the port. We can change it when needed. Step5: Annotation Open the browser, type: &lt;Your IP address&gt;:8111/directory (Show ip address: ifconfig) Label the objects in the video, go back to /directory whenever you finish the annotations and click output labels button. Find the output file in the root directory. ###Docker Commands Show all containers: sudo docker ps -a Kill the running container: sudo docker kill &lt;Container id&gt; Remove the container: sudo docker rm &lt;Container id&gt;]]></content>
