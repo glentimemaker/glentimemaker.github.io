@@ -93,14 +93,17 @@
 
 
 
+<meta name="description" content="###Preinstall ###Install CUDA Install cuda by run fileRestart the computer! Install by deb file  ###Install cuDNN Step 1. Download cuDNN from Nvidia cuDNN  Step 2. Unzip the package. tar -xzvf &amp;lt;cud">
 <meta name="keywords" content="Caffe">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Caffe Installation in Ubuntu 14.04">
 <meta property="og:url" content="http://glentimemaker.github.io/Caffe-Installation-in-Ubuntu-14-04/index.html">
 <meta property="og:site_name" content="Research Blog">
-<meta property="og:updated_time" content="2017-06-19T00:30:02.254Z">
+<meta property="og:description" content="###Preinstall ###Install CUDA Install cuda by run fileRestart the computer! Install by deb file  ###Install cuDNN Step 1. Download cuDNN from Nvidia cuDNN  Step 2. Unzip the package. tar -xzvf &amp;lt;cud">
+<meta property="og:updated_time" content="2017-08-09T19:10:12.182Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Caffe Installation in Ubuntu 14.04">
+<meta name="twitter:description" content="###Preinstall ###Install CUDA Install cuda by run fileRestart the computer! Install by deb file  ###Install cuDNN Step 1. Download cuDNN from Nvidia cuDNN  Step 2. Unzip the package. tar -xzvf &amp;lt;cud">
 
 
 
@@ -346,6 +349,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Installation/" itemprop="url" rel="index">
+                    <span itemprop="name">Installation</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -391,7 +416,52 @@
       
 
       
-        
+        <p>###Preinstall</p>
+<p>###Install CUDA</p>
+<p><a href="http://www.jianshu.com/p/35c7fde85968" target="_blank" rel="external">Install cuda by run file</a><br>Restart the computer!</p>
+<p><a href="http://www.graysonadkins.com/blog#entry003" target="_blank" rel="external">Install by deb file</a> </p>
+<p>###Install cuDNN</p>
+<p>Step 1. Download cuDNN from <a href="https://developer.nvidia.com/rdp/cudnn-download" target="_blank" rel="external">Nvidia cuDNN</a> </p>
+<p>Step 2. Unzip the package.</p>
+<pre><code>tar -xzvf &lt;cudnn-tar-file&gt;.tgz
+</code></pre><p>Step 3. Copy the *.h header files into cuda.</p>
+<pre><code>cd ~/Downloads/cuda/include
+// Copy into the installation path of cuda
+sudo cp *.h /usr/local/cuda-8.0/include/ 
+</code></pre><p>Step 4. Copy the library files of cuDNN to the cuda directory</p>
+<pre><code>cd ~/Downloads/cuda/lib64
+sudo cp libcudnn* /usr/local/cuda-8.0/lib64/
+</code></pre><p>Step 5. Set the modify type in the terminal.</p>
+<pre><code>sudo chmod a+r /usr/local/cuda-8.0/include/cudnn.h /usr/local/cuda-8.0/lib64/libcudnn*
+</code></pre><p>###Install OpenCV</p>
+<h4 id="Remove-previous-installed-OpenCV"><a href="#Remove-previous-installed-OpenCV" class="headerlink" title="Remove previous installed OpenCV"></a>Remove previous installed OpenCV</h4><pre><code>sudo rm -rf  /usr/local/include/opencv2 /usr/local/include/opencv /usr/include/opencv /usr/include/opencv2 /usr/local/share/opencv /usr/local/share/OpenCV /usr/share/opencv /usr/share/OpenCV /usr/local/bin/opencv* /usr/local/lib/libopencv*
+
+sudo apt-get purge libopencv-* python-data python-opencv
+
+sudo apt-get –purge remove opencv-doc opencv-data python-opencv
+</code></pre><h4 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h4><p>First install it’s dependencies:</p>
+<pre><code>sudo apt-get install build-essential
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get install libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+</code></pre><p>Then download the latest stable version of OpenCV from Sourceforge.</p>
+<p>Now create a temporary directory ~/opencv and extract the zip file you downloaded into it:</p>
+<pre><code>mkdir ~/opencv; cd ~/opencv
+unzip &lt;open-cv-file&gt;.zip -d .
+</code></pre><p>Finally, we’ll make the file in another directory we create called release:</p>
+<pre><code>cd opencv-&lt;version&gt;
+mkdir release; cd release
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D  WITH_IPP=OFF -D CMAKE_INSTALL_PREFIX=/usr/local ..
+make
+sudo make install
+</code></pre><h4 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h4><p>Compile samples:</p>
+<pre><code>$ cd ~/opencv-3.1.0/samples
+$ cmake .
+$ sudo make -j $(nproc)
+</code></pre><p>Run samples:</p>
+<pre><code>$ cd ~/opencv-3.1.0/samples/cpp
+$  ./cpp-example-facedetect ~/Lenna.png
+</code></pre><p>###Install Caffe</p>
+
       
     </div>
 
@@ -505,8 +575,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars3.githubusercontent.com/u/15701122?v=3&s=460"
@@ -532,7 +611,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
@@ -611,6 +690,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Remove-previous-installed-OpenCV"><span class="nav-number">1.</span> <span class="nav-text">Remove previous installed OpenCV</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Install"><span class="nav-number">2.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Test"><span class="nav-number">3.</span> <span class="nav-text">Test</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
