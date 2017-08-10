@@ -4,28 +4,8 @@
 
     
   <url>
-    <loc>http://glentimemaker.github.io/Install-and-Use-Vatic-Annotation-Tool/</loc>
-    <lastmod>2017-08-10T07:58:45.913Z</lastmod>
-    <data>
-        <display>
-        <title>Install and Use Vatic Annotation Tool</title>
-        <pubTime>2017-07-18T01:41:31.000Z</pubTime>
-        
-        <tag>vatic</tag>
-         
-         
-           
-             
-              <breadCrumb title="Data Sets" url="http://glentimemaker.github.io/categories/Data-Sets/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://glentimemaker.github.io/Reading-Note/</loc>
-    <lastmod>2017-08-10T07:53:47.843Z</lastmod>
+    <lastmod>2017-08-10T08:12:57.612Z</lastmod>
     <data>
         <display>
         <title>Reading Note</title>
@@ -39,6 +19,26 @@
            
              
               <breadCrumb title="Learning Note" url="http://glentimemaker.github.io/categories/Learning-Note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://glentimemaker.github.io/Install-and-Use-Vatic-Annotation-Tool/</loc>
+    <lastmod>2017-08-10T07:58:45.913Z</lastmod>
+    <data>
+        <display>
+        <title>Install and Use Vatic Annotation Tool</title>
+        <pubTime>2017-07-18T01:41:31.000Z</pubTime>
+        
+        <tag>vatic</tag>
+         
+         
+           
+             
+              <breadCrumb title="Data Sets" url="http://glentimemaker.github.io/categories/Data-Sets/"/>
           
         </display>
     </data>

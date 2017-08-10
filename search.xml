@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Reading Note]]></title>
     <url>%2FReading-Note%2F</url>
-    <content type="text"><![CDATA[Lifelong Machine LearningIntroductionDefinition Key Characteristics Continuous learning process Knowledge accumulation in KB Use of past knowledge to help future learning Components of LML1. Knowledge Base (KB) Past Information Store (PIS) Knowledge Store (KS) Knowledge Miner (KM) Knowledge Reasoner (KR) 2. Knowledge-Based Learner (KBL) Previous Learning: Related Learning TasksTransfer Learning—Finding correspondences(Pivot features, non-pivot features) Multi-task Learning—Each task model is a linear combination of shared latent components, All task models share latent basic model components Online Learning—]]></content>
+    <content type="text"><![CDATA[Lifelong Machine LearningIntroductionDefinition Key Characteristics Continuous learning process Knowledge accumulation in KB Use of past knowledge to help future learning Components of LML1. Knowledge Base (KB) Past Information Store (PIS) Knowledge Store (KS) Knowledge Miner (KM) Knowledge Reasoner (KR) 2. Knowledge-Based Learner (KBL) Other Related Learning Methods and Differences with LMLTransfer Learning—Finding correspondences(Pivot features, non-pivot features) Multi-task Learning—Each task model is a linear combination of shared latent components, All task models share latent basic model components Online Learning— Differences with LML the Online learning: Lifelong Supervised LearningSemi-supervised never-ending LearningLifelong unsupervised learningLifelong reinforcement learning]]></content>
       <categories>
         <category>Learning Note</category>
       </categories>
