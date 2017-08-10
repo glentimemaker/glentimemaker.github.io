@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://glentimemaker.github.io/Install-and-Use-Vatic-Annotation-Tool/</loc>
+    
+    <lastmod>2017-08-10T07:56:23.491Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://glentimemaker.github.io/Reading-Note/</loc>
     
     <lastmod>2017-08-10T07:53:47.843Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://glentimemaker.github.io/Caffe-Installation-in-Ubuntu-14-04/</loc>
     
     <lastmod>2017-08-09T19:10:12.182Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://glentimemaker.github.io/Install-and-Use-Vatic-Annotation-Tool/</loc>
-    
-    <lastmod>2017-08-05T01:39:58.182Z</lastmod>
     
   </url>
   
