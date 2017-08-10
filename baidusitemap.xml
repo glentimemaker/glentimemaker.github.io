@@ -4,21 +4,19 @@
 
     
   <url>
-    <loc>http://glentimemaker.github.io/Reading-Note/</loc>
-    <lastmod>2017-08-10T08:12:57.612Z</lastmod>
+    <loc>http://glentimemaker.github.io/Caffe-Installation-in-Ubuntu-14-04/</loc>
+    <lastmod>2017-08-10T08:17:39.879Z</lastmod>
     <data>
         <display>
-        <title>Reading Note</title>
-        <pubTime>2017-08-05T01:28:24.000Z</pubTime>
+        <title>Caffe Installation in Ubuntu 14.04</title>
+        <pubTime>2017-06-19T00:29:46.000Z</pubTime>
         
-        <tag>Life Long Learning</tag>
-         
-        <tag>Machine Learning</tag>
+        <tag>Caffe</tag>
          
          
            
              
-              <breadCrumb title="Learning Note" url="http://glentimemaker.github.io/categories/Learning-Note/"/>
+              <breadCrumb title="Installation" url="http://glentimemaker.github.io/categories/Installation/"/>
           
         </display>
     </data>
@@ -27,7 +25,7 @@
     
   <url>
     <loc>http://glentimemaker.github.io/Install-and-Use-Vatic-Annotation-Tool/</loc>
-    <lastmod>2017-08-10T07:58:45.913Z</lastmod>
+    <lastmod>2017-08-10T08:16:49.322Z</lastmod>
     <data>
         <display>
         <title>Install and Use Vatic Annotation Tool</title>
@@ -46,19 +44,21 @@
 
     
   <url>
-    <loc>http://glentimemaker.github.io/Caffe-Installation-in-Ubuntu-14-04/</loc>
-    <lastmod>2017-08-09T19:10:12.182Z</lastmod>
+    <loc>http://glentimemaker.github.io/Reading-Note/</loc>
+    <lastmod>2017-08-10T08:15:36.079Z</lastmod>
     <data>
         <display>
-        <title>Caffe Installation in Ubuntu 14.04</title>
-        <pubTime>2017-06-19T00:29:46.000Z</pubTime>
+        <title>Reading Note</title>
+        <pubTime>2017-08-05T01:28:24.000Z</pubTime>
         
-        <tag>Caffe</tag>
+        <tag>Life Long Learning</tag>
+         
+        <tag>Machine Learning</tag>
          
          
            
              
-              <breadCrumb title="Installation" url="http://glentimemaker.github.io/categories/Installation/"/>
+              <breadCrumb title="Learning Note" url="http://glentimemaker.github.io/categories/Learning-Note/"/>
           
         </display>
     </data>

@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="##How to install Vatic in a easy way Vatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where bou">
+<meta name="description" content="##How to install Vatic in a easy way## Vatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where b">
 <meta name="keywords" content="vatic">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Install and Use Vatic Annotation Tool">
 <meta property="og:url" content="http://glentimemaker.github.io/Install-and-Use-Vatic-Annotation-Tool/index.html">
 <meta property="og:site_name" content="Research Blog">
-<meta property="og:description" content="##How to install Vatic in a easy way Vatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where bou">
+<meta property="og:description" content="##How to install Vatic in a easy way## Vatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where b">
 <meta property="og:image" content="http://i.imgur.com/YjDBjHU.jpg">
-<meta property="og:updated_time" content="2017-08-10T07:58:45.913Z">
+<meta property="og:updated_time" content="2017-08-10T08:16:49.322Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Install and Use Vatic Annotation Tool">
-<meta name="twitter:description" content="##How to install Vatic in a easy way Vatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where bou">
+<meta name="twitter:description" content="##How to install Vatic in a easy way## Vatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where b">
 <meta name="twitter:image" content="http://i.imgur.com/YjDBjHU.jpg">
 
 
@@ -418,15 +418,15 @@
       
 
       
-        <p>##How to install Vatic in a easy way</p>
+        <p>##How to install Vatic in a easy way##</p>
 <p>Vatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where bounding boxes are automatically interpolated in both size and position. Annotation is performed in a web browser, and annotations are stored in a MySQL database. For this, videos need to be locally published using command line interfacing. Extracting the annotation is also performed using the command line interface.<br><img src="http://i.imgur.com/YjDBjHU.jpg" alt=""></p>
 <p>The installation requires a lot of configurations, and it is super painful. The installation steps are shown in <a href="https://github.com/cvondrick/vatic" target="_blank" rel="external">Vatic</a> . Instead of installing it step by step manually and encountering lots of bugs, we can easily use other people’s docker environment and run it by VM.</p>
-<p>###1. Install docker</p>
+<p>###1. Install docker###</p>
 <p>Step1: undate inner core:</p>
 <pre><code>sudo apt-get install -y --install-recommends linux-generic-lts-trusty
 </code></pre><p>Step2: Use scripts to install the docker</p>
 <pre><code>curl -sSL https://get.docker.com/ | sh
-</code></pre><p>###2. Install and use Vatic</p>
+</code></pre><p>###2. Install and use Vatic###</p>
 <p>reference: <a href="https://github.com/NPSVisionLab/vatic-docker" target="_blank" rel="external">vatic-docker</a> </p>
 <p>Step1: Create “data” folder in the directory where you want to run.</p>
 <p>Step2: Create “labels.txt” file in data folder. Put all the object types that you want to label on the first line separated by spaces. </p>
@@ -439,7 +439,7 @@
 <pre><code>&lt;Your IP address&gt;:8111/directory
 </code></pre><p>(Show ip address: ifconfig)</p>
 <p>Label the objects in the video, go back to /directory whenever you finish the annotations and click output labels button. Find the output file in the root directory.</p>
-<p>###Docker Commands</p>
+<p>###Docker Commands###</p>
 <ol>
 <li><p>Show all containers:</p>
 <pre><code>sudo docker ps -a        
