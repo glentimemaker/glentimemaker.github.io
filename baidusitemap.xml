@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://glentimemaker.github.io/Reading-Note/</loc>
+    <lastmod>2017-08-10T07:53:47.843Z</lastmod>
+    <data>
+        <display>
+        <title>Reading Note</title>
+        <pubTime>2017-08-05T01:28:24.000Z</pubTime>
+        
+        <tag>Life Long Learning</tag>
+         
+        <tag>Machine Learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="Learning Note" url="http://glentimemaker.github.io/categories/Learning-Note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://glentimemaker.github.io/Caffe-Installation-in-Ubuntu-14-04/</loc>
     <lastmod>2017-08-09T19:10:12.182Z</lastmod>
     <data>
@@ -37,28 +59,6 @@
            
              
               <breadCrumb title="Data Sets" url="http://glentimemaker.github.io/categories/Data-Sets/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://glentimemaker.github.io/Reading-Note/</loc>
-    <lastmod>2017-08-05T01:38:01.770Z</lastmod>
-    <data>
-        <display>
-        <title>Reading Note</title>
-        <pubTime>2017-08-05T01:28:24.000Z</pubTime>
-        
-        <tag>Life Long Learning</tag>
-         
-        <tag>Machine Learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="Learning Note" url="http://glentimemaker.github.io/categories/Learning-Note/"/>
           
         </display>
     </data>
