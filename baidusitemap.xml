@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://glentimemaker.github.io/Reading-Note/</loc>
+    <lastmod>2017-08-17T20:05:12.018Z</lastmod>
+    <data>
+        <display>
+        <title>Reading Note</title>
+        <pubTime>2017-08-05T01:28:24.000Z</pubTime>
+        
+        <tag>Life Long Learning</tag>
+         
+        <tag>Machine Learning</tag>
+         
+         
+           
+             
+              <breadCrumb title="Learning Note" url="http://glentimemaker.github.io/categories/Learning-Note/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://glentimemaker.github.io/Install-and-Use-Vatic-Annotation-Tool/</loc>
     <lastmod>2017-08-10T08:21:19.972Z</lastmod>
     <data>
@@ -37,28 +59,6 @@
            
              
               <breadCrumb title="Installation" url="http://glentimemaker.github.io/categories/Installation/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://glentimemaker.github.io/Reading-Note/</loc>
-    <lastmod>2017-08-10T08:15:36.079Z</lastmod>
-    <data>
-        <display>
-        <title>Reading Note</title>
-        <pubTime>2017-08-05T01:28:24.000Z</pubTime>
-        
-        <tag>Life Long Learning</tag>
-         
-        <tag>Machine Learning</tag>
-         
-         
-           
-             
-              <breadCrumb title="Learning Note" url="http://glentimemaker.github.io/categories/Learning-Note/"/>
           
         </display>
     </data>
