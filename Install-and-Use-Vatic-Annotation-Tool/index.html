@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="Research Blog">
 <meta property="og:description" content="How to install Vatic in a easy wayVatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where boundi">
 <meta property="og:image" content="http://i.imgur.com/YjDBjHU.jpg">
-<meta property="og:updated_time" content="2017-08-10T08:21:19.972Z">
+<meta property="og:updated_time" content="2017-10-05T03:29:51.132Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Install and Use Vatic Annotation Tool">
 <meta name="twitter:description" content="How to install Vatic in a easy wayVatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where boundi">
@@ -427,7 +427,7 @@
 </code></pre><h3 id="2-Install-and-use-Vatic"><a href="#2-Install-and-use-Vatic" class="headerlink" title="2. Install and use Vatic"></a>2. Install and use Vatic</h3><p>reference: <a href="https://github.com/NPSVisionLab/vatic-docker" target="_blank" rel="external">vatic-docker</a> </p>
 <p>Step1: Create “data” folder in the directory where you want to run.</p>
 <p>Step2: Create “labels.txt” file in data folder. Put all the object types that you want to label on the first line separated by spaces. </p>
-<p>Step3: Create “video_in” folder in data folder, and put in the video you want to label.</p>
+<p>Step3: Create “videos_in” folder in data folder, and put in the video you want to label.</p>
 <p>Step4: Run the vatic in docker:</p>
 <pre><code>sudo docker run -it -p 8111:80 -v $PWD/data:/root/vatic/data npsvisionlab/vatic-docker /bin/bash -C /root/vatic/example.sh
 </code></pre><p>8111 is the port. We can change it when needed.</p>
