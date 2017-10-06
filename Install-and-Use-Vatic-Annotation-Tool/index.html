@@ -93,18 +93,18 @@
 
 
 
-<meta name="description" content="How to install Vatic in a easy wayVatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where boundi">
+<meta name="description" content="A. How to install Vatic in one line codeVatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where">
 <meta name="keywords" content="vatic">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Install and Use Vatic Annotation Tool">
 <meta property="og:url" content="http://glentimemaker.github.io/Install-and-Use-Vatic-Annotation-Tool/index.html">
 <meta property="og:site_name" content="Research Blog">
-<meta property="og:description" content="How to install Vatic in a easy wayVatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where boundi">
+<meta property="og:description" content="A. How to install Vatic in one line codeVatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where">
 <meta property="og:image" content="http://i.imgur.com/YjDBjHU.jpg">
-<meta property="og:updated_time" content="2017-10-05T03:29:51.132Z">
+<meta property="og:updated_time" content="2017-10-06T01:54:01.311Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Install and Use Vatic Annotation Tool">
-<meta name="twitter:description" content="How to install Vatic in a easy wayVatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where boundi">
+<meta name="twitter:description" content="A. How to install Vatic in one line codeVatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where">
 <meta name="twitter:image" content="http://i.imgur.com/YjDBjHU.jpg">
 
 
@@ -418,7 +418,7 @@
       
 
       
-        <h2 id="How-to-install-Vatic-in-a-easy-way"><a href="#How-to-install-Vatic-in-a-easy-way" class="headerlink" title="How to install Vatic in a easy way"></a>How to install Vatic in a easy way</h2><p>Vatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where bounding boxes are automatically interpolated in both size and position. Annotation is performed in a web browser, and annotations are stored in a MySQL database. For this, videos need to be locally published using command line interfacing. Extracting the annotation is also performed using the command line interface.<br><img src="http://i.imgur.com/YjDBjHU.jpg" alt=""></p>
+        <h2 id="A-How-to-install-Vatic-in-one-line-code"><a href="#A-How-to-install-Vatic-in-one-line-code" class="headerlink" title="A. How to install Vatic in one line code"></a>A. How to install Vatic in one line code</h2><p>Vatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where bounding boxes are automatically interpolated in both size and position. Annotation is performed in a web browser, and annotations are stored in a MySQL database. For this, videos need to be locally published using command line interfacing. Extracting the annotation is also performed using the command line interface.<br><img src="http://i.imgur.com/YjDBjHU.jpg" alt=""></p>
 <p>The installation requires a lot of configurations, and it is super painful. The installation steps are shown in <a href="https://github.com/cvondrick/vatic" target="_blank" rel="external">Vatic</a> . Instead of installing it step by step manually and encountering lots of bugs, we can easily use other people’s docker environment and run it by VM.</p>
 <h3 id="1-Install-docker"><a href="#1-Install-docker" class="headerlink" title="1. Install docker"></a>1. Install docker</h3><p>Step1: undate inner core:</p>
 <pre><code>sudo apt-get install -y --install-recommends linux-generic-lts-trusty
@@ -447,7 +447,30 @@
 <pre><code>sudo docker rm &lt;Container id&gt;
 </code></pre></li>
 </ol>
-
+<h2 id="B-Another-installation-method"><a href="#B-Another-installation-method" class="headerlink" title="B. Another installation method"></a>B. Another installation method</h2><p>The previous method is quite easy and all set-up commands are wrapped in one line code. However, what if you want to do some modifications? For example, you want to modify the length of each segment for the video. Have a look of the <a href="https://github.com/cvondrick/vatic" title="Original Vatic Code" target="_blank" rel="external">Original Vatic Code</a> , you can see that we can modify it by using the <code>--length</code> option whiling publishing the video.</p>
+<p>We can’t use those options in the first installation method. So, here is another method, which is a step-by-step installation for vatic in docker.</p>
+<p><a href="https://hub.docker.com/r/jldowns/vatic-docker-contrib/" target="_blank" rel="external">Reference</a></p>
+<h3 id="1-Install-Docker-the-same-as-method-1"><a href="#1-Install-Docker-the-same-as-method-1" class="headerlink" title="1. Install Docker (the same as method #1)"></a>1. Install Docker (the same as method #1)</h3><h3 id="2-Create-folder-and-Link"><a href="#2-Create-folder-and-Link" class="headerlink" title="2. Create folder and Link"></a>2. Create folder and Link</h3><p>Create one folder named “data” in your current location. Put the video inside, and create another folder named “frames” inside the folder “data”.</p>
+<p>Then, save the address as a value “DATA_DIR”.</p>
+<pre><code>DATA_DIR=`pwd`/data/
+mkdir -p $DATA_DIR
+</code></pre><h3 id="3-Start-the-Vatic-server"><a href="#3-Start-the-Vatic-server" class="headerlink" title="3. Start the Vatic server"></a>3. Start the Vatic server</h3><pre><code>docker run -it -p 8080:80 -v $DATA_DIR:/home/vagrant/vagrant_data jldowns/vatic-docker-contrib:0.1
+</code></pre><h3 id="4-Start-the-MySQL-and-Apache"><a href="#4-Start-the-MySQL-and-Apache" class="headerlink" title="4. Start the MySQL and Apache"></a>4. Start the MySQL and Apache</h3><pre><code>/home/vagrant/start_services.sh
+</code></pre><h3 id="5-Extract-the-frames-from-video"><a href="#5-Extract-the-frames-from-video" class="headerlink" title="5. Extract the frames from video"></a>5. Extract the frames from video</h3><pre><code>cd /home/vagrant/vatic
+turkic extract /home/vagrant/vagrant_data/your_video_name.mp4 /home/vagrant/vagrant_data/frames/
+</code></pre><p>Here, we can use different options to extract the frames, such as modify the ratio by adding <code>--width 1000 --height 800</code> at the end of above code. More options, see <a href="https://github.com/cvondrick/vatic" target="_blank" rel="external">Vatic</a>. </p>
+<h3 id="6-Load-and-Public"><a href="#6-Load-and-Public" class="headerlink" title="6. Load and Public"></a>6. Load and Public</h3><pre><code>turkic load job_id /home/vagrant/vagrant_data/frames/ car skateboard airplane --offline
+</code></pre><p>Here, <code>car skateboard airplane</code> are different labels. </p>
+<p>And in order to modify the length of each segment for the video as we mentioned at the begin. We can use <code>--length</code> option. Just like,</p>
+<pre><code>turkic load job_id /home/vagrant/vagrant_data/frames/ pedestrain sedan truck van bicycle --offline --length 4000
+</code></pre><p>More options, <a href="https://github.com/cvondrick/vatic" target="_blank" rel="external">Vatic</a>.</p>
+<h3 id="7-Check-all-the-URLS"><a href="#7-Check-all-the-URLS" class="headerlink" title="7. Check all the URLS"></a>7. Check all the URLS</h3><pre><code>turkic publish --offline
+</code></pre><p>or open the browser and type in </p>
+<pre><code> http://localhost/?id=1&amp;hitId=offline
+http://localhost/?id=2&amp;hitId=offline
+http://localhost/?id=3&amp;hitId=offline
+...
+</code></pre>
       
     </div>
 
@@ -686,7 +709,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#How-to-install-Vatic-in-a-easy-way"><span class="nav-number">1.</span> <span class="nav-text">How to install Vatic in a easy way</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Install-docker"><span class="nav-number">1.1.</span> <span class="nav-text">1. Install docker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Install-and-use-Vatic"><span class="nav-number">1.2.</span> <span class="nav-text">2. Install and use Vatic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-Commands"><span class="nav-number">1.3.</span> <span class="nav-text">Docker Commands</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#A-How-to-install-Vatic-in-one-line-code"><span class="nav-number">1.</span> <span class="nav-text">A. How to install Vatic in one line code</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Install-docker"><span class="nav-number">1.1.</span> <span class="nav-text">1. Install docker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Install-and-use-Vatic"><span class="nav-number">1.2.</span> <span class="nav-text">2. Install and use Vatic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-Commands"><span class="nav-number">1.3.</span> <span class="nav-text">Docker Commands</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B-Another-installation-method"><span class="nav-number">2.</span> <span class="nav-text">B. Another installation method</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Install-Docker-the-same-as-method-1"><span class="nav-number">2.1.</span> <span class="nav-text">1. Install Docker (the same as method #1)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Create-folder-and-Link"><span class="nav-number">2.2.</span> <span class="nav-text">2. Create folder and Link</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Start-the-Vatic-server"><span class="nav-number">2.3.</span> <span class="nav-text">3. Start the Vatic server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Start-the-MySQL-and-Apache"><span class="nav-number">2.4.</span> <span class="nav-text">4. Start the MySQL and Apache</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Extract-the-frames-from-video"><span class="nav-number">2.5.</span> <span class="nav-text">5. Extract the frames from video</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Load-and-Public"><span class="nav-number">2.6.</span> <span class="nav-text">6. Load and Public</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Check-all-the-URLS"><span class="nav-number">2.7.</span> <span class="nav-text">7. Check all the URLS</span></a></li></ol></li></ol></div>
             
 
           </div>
