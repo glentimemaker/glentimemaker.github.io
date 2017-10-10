@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Caffe," />
+  <meta name="keywords" content="RCNN, Fast RCNN, Faster RCNN," />
 
 
 
@@ -93,17 +93,20 @@
 
 
 
-<meta name="description" content="PreinstallInstall CUDAInstall cuda by run fileRestart the computer! Install by deb file  Install cuDNNStep 1. Download cuDNN from Nvidia cuDNN  Step 2. Unzip the package. tar -xzvf &amp;lt;cudnn-tar-file&amp;">
-<meta name="keywords" content="Caffe">
+<meta name="description" content="R-CNN, Fast R-CNN and Faster R-CNN Learning NoteA. R-CNNPre-knowledge1. Selective SearchGoal:Propose possible regions of the object. Considerations:  尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也">
+<meta name="keywords" content="RCNN, Fast RCNN, Faster RCNN">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Caffe Installation in Ubuntu 14.04">
-<meta property="og:url" content="http://glentimemaker.github.io/Caffe-Installation-in-Ubuntu-14-04/index.html">
+<meta property="og:title" content="RCNN serials Learning Note">
+<meta property="og:url" content="http://glentimemaker.github.io/RCNN-serials-Learning-Note/index.html">
 <meta property="og:site_name" content="Research Blog">
-<meta property="og:description" content="PreinstallInstall CUDAInstall cuda by run fileRestart the computer! Install by deb file  Install cuDNNStep 1. Download cuDNN from Nvidia cuDNN  Step 2. Unzip the package. tar -xzvf &amp;lt;cudnn-tar-file&amp;">
-<meta property="og:updated_time" content="2017-08-10T08:20:49.103Z">
+<meta property="og:description" content="R-CNN, Fast R-CNN and Faster R-CNN Learning NoteA. R-CNNPre-knowledge1. Selective SearchGoal:Propose possible regions of the object. Considerations:  尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也">
+<meta property="og:image" content="https://i.imgur.com/eDpj51A.png">
+<meta property="og:image" content="https://i.imgur.com/UTjVn2A.png">
+<meta property="og:updated_time" content="2017-10-10T22:13:11.281Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Caffe Installation in Ubuntu 14.04">
-<meta name="twitter:description" content="PreinstallInstall CUDAInstall cuda by run fileRestart the computer! Install by deb file  Install cuDNNStep 1. Download cuDNN from Nvidia cuDNN  Step 2. Unzip the package. tar -xzvf &amp;lt;cudnn-tar-file&amp;">
+<meta name="twitter:title" content="RCNN serials Learning Note">
+<meta name="twitter:description" content="R-CNN, Fast R-CNN and Faster R-CNN Learning NoteA. R-CNNPre-knowledge1. Selective SearchGoal:Propose possible regions of the object. Considerations:  尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也">
+<meta name="twitter:image" content="https://i.imgur.com/eDpj51A.png">
 
 
 
@@ -131,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://glentimemaker.github.io/Caffe-Installation-in-Ubuntu-14-04/"/>
+  <link rel="canonical" href="http://glentimemaker.github.io/RCNN-serials-Learning-Note/"/>
 
 
 
 
 
-  <title>Caffe Installation in Ubuntu 14.04 | Research Blog</title>
+  <title>RCNN serials Learning Note | Research Blog</title>
   
 
 
@@ -309,7 +312,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://glentimemaker.github.io/Caffe-Installation-in-Ubuntu-14-04/">
+    <link itemprop="mainEntityOfPage" href="http://glentimemaker.github.io/RCNN-serials-Learning-Note/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chenlei Zhang">
@@ -326,7 +329,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Caffe Installation in Ubuntu 14.04</h1>
+          <h1 class="post-title" itemprop="name headline">RCNN serials Learning Note</h1>
         
 
         <div class="post-meta">
@@ -338,8 +341,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-18T17:29:46-07:00">
-                2017-06-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-10T15:08:43-07:00">
+                2017-10-10
               </time>
             
 
@@ -361,8 +364,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Installation/" itemprop="url" rel="index">
-                    <span itemprop="name">Installation</span>
+                  <a href="/categories/Learning-Note/" itemprop="url" rel="index">
+                    <span itemprop="name">Learning Note</span>
                   </a>
                 </span>
 
@@ -379,8 +382,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/Caffe-Installation-in-Ubuntu-14-04/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://glentimemaker.github.io/Caffe-Installation-in-Ubuntu-14-04/" itemprop="commentCount">0</span> comments
+                <a href="/RCNN-serials-Learning-Note/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://glentimemaker.github.io/RCNN-serials-Learning-Note/" itemprop="commentCount">0</span> comments
                 </a>
               </span>
             
@@ -388,7 +391,7 @@
 
           
           
-             <span id="/Caffe-Installation-in-Ubuntu-14-04/" class="leancloud_visitors" data-flag-title="Caffe Installation in Ubuntu 14.04">
+             <span id="/RCNN-serials-Learning-Note/" class="leancloud_visitors" data-flag-title="RCNN serials Learning Note">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -416,47 +419,37 @@
       
 
       
-        <h3 id="Preinstall"><a href="#Preinstall" class="headerlink" title="Preinstall"></a>Preinstall</h3><h3 id="Install-CUDA"><a href="#Install-CUDA" class="headerlink" title="Install CUDA"></a>Install CUDA</h3><p><a href="http://www.jianshu.com/p/35c7fde85968" target="_blank" rel="external">Install cuda by run file</a><br>Restart the computer!</p>
-<p><a href="http://www.graysonadkins.com/blog#entry003" target="_blank" rel="external">Install by deb file</a> </p>
-<h3 id="Install-cuDNN"><a href="#Install-cuDNN" class="headerlink" title="Install cuDNN"></a>Install cuDNN</h3><p>Step 1. Download cuDNN from <a href="https://developer.nvidia.com/rdp/cudnn-download" target="_blank" rel="external">Nvidia cuDNN</a> </p>
-<p>Step 2. Unzip the package.</p>
-<pre><code>tar -xzvf &lt;cudnn-tar-file&gt;.tgz
-</code></pre><p>Step 3. Copy the *.h header files into cuda.</p>
-<pre><code>cd ~/Downloads/cuda/include
-// Copy into the installation path of cuda
-sudo cp *.h /usr/local/cuda-8.0/include/ 
-</code></pre><p>Step 4. Copy the library files of cuDNN to the cuda directory</p>
-<pre><code>cd ~/Downloads/cuda/lib64
-sudo cp libcudnn* /usr/local/cuda-8.0/lib64/
-</code></pre><p>Step 5. Set the modify type in the terminal.</p>
-<pre><code>sudo chmod a+r /usr/local/cuda-8.0/include/cudnn.h /usr/local/cuda-8.0/lib64/libcudnn*
-</code></pre><h3 id="Install-OpenCV"><a href="#Install-OpenCV" class="headerlink" title="Install OpenCV"></a>Install OpenCV</h3><h4 id="Remove-previous-installed-OpenCV"><a href="#Remove-previous-installed-OpenCV" class="headerlink" title="Remove previous installed OpenCV"></a>Remove previous installed OpenCV</h4><pre><code>sudo rm -rf  /usr/local/include/opencv2 /usr/local/include/opencv /usr/include/opencv /usr/include/opencv2 /usr/local/share/opencv /usr/local/share/OpenCV /usr/share/opencv /usr/share/OpenCV /usr/local/bin/opencv* /usr/local/lib/libopencv*
+        <h1 id="R-CNN-Fast-R-CNN-and-Faster-R-CNN-Learning-Note"><a href="#R-CNN-Fast-R-CNN-and-Faster-R-CNN-Learning-Note" class="headerlink" title="R-CNN, Fast R-CNN and Faster R-CNN Learning Note"></a>R-CNN, Fast R-CNN and Faster R-CNN Learning Note</h1><h2 id="A-R-CNN"><a href="#A-R-CNN" class="headerlink" title="A. R-CNN"></a>A. R-CNN</h2><h3 id="Pre-knowledge"><a href="#Pre-knowledge" class="headerlink" title="Pre-knowledge"></a>Pre-knowledge</h3><h4 id="1-Selective-Search"><a href="#1-Selective-Search" class="headerlink" title="1. Selective Search"></a>1. Selective Search</h4><p><strong>Goal:</strong><br>Propose possible regions of the object.</p>
+<p>Considerations:</p>
+<ol>
+<li><p>尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也符合人类的视觉认知。</p>
+</li>
+<li><p>既然特征很多，那就把我们知道的特征都用上，但是同时也要照顾下计算复杂度，不然和穷举法也没啥区别了。 texture, edge, color</p>
+</li>
+<li><p>Hierarchical Grouping. 能够对每个区域进行排序，这样你想要多少个候选我就产生多少个. </p>
+</li>
+</ol>
+<p><strong>Methods</strong></p>
+<p><strong>a. Algorithm</strong><br><img src="https://i.imgur.com/eDpj51A.png" alt=""></p>
+<p>计算所有相邻区域之间的相似度（相似度函数之后会重点分析），放入集合 S 中，集合 S 保存的其实是一个区域对以及它们之间的相似度。</p>
+<p>找出 S 中相似度最高的区域对，将它们合并，并从 S 中删除与它们相关的所有相似度和区域对。重新计算这个新区域与周围区域的相似度，放入集合 S 中，并将这个新合并的区域放入集合 R 中。重复这个步骤直到 S 为空（需要注意的是，为了计算方便，当两个region合并的时候，新的region的特征应当从之前的两个region的特征直接计算出，而不是再回到图片像素来计算）。</p>
+<p>并且，其中每次产生的图像块包括合并的图像块我们都保存下来，这样就得到图像的分层表示。</p>
+<p><strong>b. Similarity Calculation</strong></p>
+<p>相似度度量公式分为四个子公式，称为互补相似度测量(Complementary Similarity Measures) 。这四个子公式的值都被归一化到区间 [0, 1] 内。</p>
+<p><img src="https://i.imgur.com/UTjVn2A.png" alt=""></p>
+<ol>
+<li><p>颜色相似度Scolor (ri,rj)</p>
+</li>
+<li><p>纹理相似度stexture (ri,rj)</p>
+</li>
+<li><p>尺寸相似度ssize (ri,rj)</p>
+</li>
+<li><p>填充相似度sfill(ri,rj)</p>
+</li>
+</ol>
+<p><strong>c. Combining Locations</strong></p>
+<p>我们将覆盖整个区域的 region 的序号标记为 1，合成这个区域的两个子区域的序号为 2，以此类推。但如果仅按序号排序，会存在一个漏洞，那就是区域面积大的会排在前面，为了避免这个漏洞，作者又在每个序号前乘上一个随机数 RND∈[0,1]RND∈[0,1]，通过这个新计算出来的数值，按从小到大的顺序得出 region 最终的排序结果。</p>
 
-sudo apt-get purge libopencv-* python-data python-opencv
-
-sudo apt-get –purge remove opencv-doc opencv-data python-opencv
-</code></pre><h4 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h4><p>First install it’s dependencies:</p>
-<pre><code>sudo apt-get install build-essential
-sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
-sudo apt-get install libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
-</code></pre><p>Then download the latest stable version of OpenCV from Sourceforge.</p>
-<p>Now create a temporary directory ~/opencv and extract the zip file you downloaded into it:</p>
-<pre><code>mkdir ~/opencv; cd ~/opencv
-unzip &lt;open-cv-file&gt;.zip -d .
-</code></pre><p>Finally, we’ll make the file in another directory we create called release:</p>
-<pre><code>cd opencv-&lt;version&gt;
-mkdir release; cd release
-cmake -D CMAKE_BUILD_TYPE=RELEASE -D  WITH_IPP=OFF -D CMAKE_INSTALL_PREFIX=/usr/local ..
-make
-sudo make install
-</code></pre><h4 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h4><p>Compile samples:</p>
-<pre><code>$ cd ~/opencv-3.1.0/samples
-$ cmake .
-$ sudo make -j $(nproc)
-</code></pre><p>Run samples:</p>
-<pre><code>$ cd ~/opencv-3.1.0/samples/cpp
-$  ./cpp-example-facedetect ~/Lenna.png
-</code></pre><h3 id="Install-Caffe"><a href="#Install-Caffe" class="headerlink" title="Install Caffe"></a>Install Caffe</h3>
       
     </div>
 
@@ -485,7 +478,7 @@ $  ./cpp-example-facedetect ~/Lenna.png
       
         <div class="post-tags">
           
-            <a href="/tags/Caffe/" rel="tag"># Caffe</a>
+            <a href="/tags/RCNN-Fast-RCNN-Faster-RCNN/" rel="tag"># RCNN, Fast RCNN, Faster RCNN</a>
           
         </div>
       
@@ -498,8 +491,8 @@ $  ./cpp-example-facedetect ~/Lenna.png
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/CNN-Example-1-Recognize-Object/" rel="next" title="CNN Example#1 Recognize Object">
-                <i class="fa fa-chevron-left"></i> CNN Example#1 Recognize Object
+              <a href="/Reading-Note/" rel="next" title="Reading Note">
+                <i class="fa fa-chevron-left"></i> Reading Note
               </a>
             
           </div>
@@ -507,10 +500,6 @@ $  ./cpp-example-facedetect ~/Lenna.png
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/Install-and-Use-Vatic-Annotation-Tool/" rel="prev" title="Install and Use Vatic Annotation Tool">
-                Install and Use Vatic Annotation Tool <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -695,7 +684,7 @@ $  ./cpp-example-facedetect ~/Lenna.png
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Preinstall"><span class="nav-number">1.</span> <span class="nav-text">Preinstall</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-CUDA"><span class="nav-number">2.</span> <span class="nav-text">Install CUDA</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-cuDNN"><span class="nav-number">3.</span> <span class="nav-text">Install cuDNN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-OpenCV"><span class="nav-number">4.</span> <span class="nav-text">Install OpenCV</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Remove-previous-installed-OpenCV"><span class="nav-number">4.1.</span> <span class="nav-text">Remove previous installed OpenCV</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Install"><span class="nav-number">4.2.</span> <span class="nav-text">Install</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Test"><span class="nav-number">4.3.</span> <span class="nav-text">Test</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Caffe"><span class="nav-number">5.</span> <span class="nav-text">Install Caffe</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#R-CNN-Fast-R-CNN-and-Faster-R-CNN-Learning-Note"><span class="nav-number">1.</span> <span class="nav-text">R-CNN, Fast R-CNN and Faster R-CNN Learning Note</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#A-R-CNN"><span class="nav-number">1.1.</span> <span class="nav-text">A. R-CNN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Pre-knowledge"><span class="nav-number">1.1.1.</span> <span class="nav-text">Pre-knowledge</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Selective-Search"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">1. Selective Search</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -852,9 +841,9 @@ $  ./cpp-example-facedetect ~/Lenna.png
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://glentimemaker.github.io/Caffe-Installation-in-Ubuntu-14-04/';
-          this.page.identifier = 'Caffe-Installation-in-Ubuntu-14-04/';
-          this.page.title = 'Caffe Installation in Ubuntu 14.04';
+          this.page.url = 'http://glentimemaker.github.io/RCNN-serials-Learning-Note/';
+          this.page.identifier = 'RCNN-serials-Learning-Note/';
+          this.page.title = 'RCNN serials Learning Note';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://glentimemaker-github-io.disqus.com/embed.js';

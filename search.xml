@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[RCNN serials Learning Note]]></title>
+    <url>%2FRCNN-serials-Learning-Note%2F</url>
+    <content type="text"><![CDATA[R-CNN, Fast R-CNN and Faster R-CNN Learning NoteA. R-CNNPre-knowledge1. Selective SearchGoal:Propose possible regions of the object. Considerations: 尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也符合人类的视觉认知。 既然特征很多，那就把我们知道的特征都用上，但是同时也要照顾下计算复杂度，不然和穷举法也没啥区别了。 texture, edge, color Hierarchical Grouping. 能够对每个区域进行排序，这样你想要多少个候选我就产生多少个. Methods a. Algorithm 计算所有相邻区域之间的相似度（相似度函数之后会重点分析），放入集合 S 中，集合 S 保存的其实是一个区域对以及它们之间的相似度。 找出 S 中相似度最高的区域对，将它们合并，并从 S 中删除与它们相关的所有相似度和区域对。重新计算这个新区域与周围区域的相似度，放入集合 S 中，并将这个新合并的区域放入集合 R 中。重复这个步骤直到 S 为空（需要注意的是，为了计算方便，当两个region合并的时候，新的region的特征应当从之前的两个region的特征直接计算出，而不是再回到图片像素来计算）。 并且，其中每次产生的图像块包括合并的图像块我们都保存下来，这样就得到图像的分层表示。 b. Similarity Calculation 相似度度量公式分为四个子公式，称为互补相似度测量(Complementary Similarity Measures) 。这四个子公式的值都被归一化到区间 [0, 1] 内。 颜色相似度Scolor (ri,rj) 纹理相似度stexture (ri,rj) 尺寸相似度ssize (ri,rj) 填充相似度sfill(ri,rj) c. Combining Locations 我们将覆盖整个区域的 region 的序号标记为 1，合成这个区域的两个子区域的序号为 2，以此类推。但如果仅按序号排序，会存在一个漏洞，那就是区域面积大的会排在前面，为了避免这个漏洞，作者又在每个序号前乘上一个随机数 RND∈[0,1]RND∈[0,1]，通过这个新计算出来的数值，按从小到大的顺序得出 region 最终的排序结果。]]></content>
+      <categories>
+        <category>Learning Note</category>
+      </categories>
+      <tags>
+        <tag>RCNN, Fast RCNN, Faster RCNN</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Reading Note]]></title>
     <url>%2FReading-Note%2F</url>
     <content type="text"><![CDATA[Lifelong Machine LearningIntroductionDefinition Key Characteristics Continuous learning process Knowledge accumulation in KB Use of past knowledge to help future learning Components of LML1. Knowledge Base (KB) Past Information Store (PIS) Knowledge Store (KS) Knowledge Miner (KM) Knowledge Reasoner (KR) 2. Knowledge-Based Learner (KBL) Other Related Learning Methods and Differences with LMLTransfer Learning—Finding correspondences(Pivot features, non-pivot features): Transfer learning typicallyuses labeled training data from one (or more)source domain(s) to help learning in the target domainthat has little or no labeled data (Aue andGamon, 2005, Bollegala et al., 2011). It does notuse the results of the past learning or knowledgemined from the results of the past learning. Further,transfer learning is usually inferior to traditionalsupervised learning when the target domainalready has good training data. Multi-task Learning—Each task model is a linear combination of shared latent components, All task models share latent basic model components Online Learning— The Differences of methods above with LML the Online learning: Lifelong Supervised LearningEarly Works1. Memory based + Distance calculate predicting2. Neural Network3. Task ClusteringNowadays Works1. ELLA: based on GO-MTLN: all tasks (individual)L: all tasks learned from N (latent) 2. Lifelong Sentiment ClassificationComponents i. A classifier for sentiment classification: Use BN and stochastic gradient descent. ii. Embed the past knowledge by using penalty terms so that optimizing the method. iii. Also, consider about dependent classes. 3. Cumulative LearningGoal: Detecting unseen classes in testing. Steps: i. Add new classes ii. Self Learning Semi-supervised never-ending LearningLifelong unsupervised learningLifelong reinforcement learning]]></content>
