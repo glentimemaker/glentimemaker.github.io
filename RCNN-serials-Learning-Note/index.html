@@ -93,13 +93,13 @@
 
 
 
-<meta name="description" content="R-CNN, Fast R-CNN and Faster R-CNN Learning NoteA. R-CNNPre-knowledge1. Selective SearchGoal:Propose possible regions of the object. Considerations:  尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也">
+<meta name="description" content="R-CNN, Fast R-CNN and Faster R-CNN Learning NoteR-CNNPre-knowledge1. Selective SearchGoal:Propose possible regions of the object. Considerations:  尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也符合人">
 <meta name="keywords" content="RCNN, Fast RCNN, Faster RCNN">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RCNN serials Learning Note">
 <meta property="og:url" content="http://glentimemaker.github.io/RCNN-serials-Learning-Note/index.html">
 <meta property="og:site_name" content="Research Blog">
-<meta property="og:description" content="R-CNN, Fast R-CNN and Faster R-CNN Learning NoteA. R-CNNPre-knowledge1. Selective SearchGoal:Propose possible regions of the object. Considerations:  尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也">
+<meta property="og:description" content="R-CNN, Fast R-CNN and Faster R-CNN Learning NoteR-CNNPre-knowledge1. Selective SearchGoal:Propose possible regions of the object. Considerations:  尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也符合人">
 <meta property="og:image" content="https://i.imgur.com/eDpj51A.png">
 <meta property="og:image" content="https://i.imgur.com/UTjVn2A.png">
 <meta property="og:image" content="https://i.imgur.com/njPJ8ez.png">
@@ -107,10 +107,10 @@
 <meta property="og:image" content="https://i.imgur.com/NSHgiiZ.png">
 <meta property="og:image" content="https://i.imgur.com/N43ppk9.png">
 <meta property="og:image" content="https://i.imgur.com/giDPiFI.png">
-<meta property="og:updated_time" content="2017-10-10T23:33:11.061Z">
+<meta property="og:updated_time" content="2017-10-11T00:01:27.930Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RCNN serials Learning Note">
-<meta name="twitter:description" content="R-CNN, Fast R-CNN and Faster R-CNN Learning NoteA. R-CNNPre-knowledge1. Selective SearchGoal:Propose possible regions of the object. Considerations:  尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也">
+<meta name="twitter:description" content="R-CNN, Fast R-CNN and Faster R-CNN Learning NoteR-CNNPre-knowledge1. Selective SearchGoal:Propose possible regions of the object. Considerations:  尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也符合人">
 <meta name="twitter:image" content="https://i.imgur.com/eDpj51A.png">
 
 
@@ -424,7 +424,7 @@
       
 
       
-        <h1 id="R-CNN-Fast-R-CNN-and-Faster-R-CNN-Learning-Note"><a href="#R-CNN-Fast-R-CNN-and-Faster-R-CNN-Learning-Note" class="headerlink" title="R-CNN, Fast R-CNN and Faster R-CNN Learning Note"></a>R-CNN, Fast R-CNN and Faster R-CNN Learning Note</h1><h2 id="A-R-CNN"><a href="#A-R-CNN" class="headerlink" title="A. R-CNN"></a>A. R-CNN</h2><h3 id="Pre-knowledge"><a href="#Pre-knowledge" class="headerlink" title="Pre-knowledge"></a>Pre-knowledge</h3><h4 id="1-Selective-Search"><a href="#1-Selective-Search" class="headerlink" title="1. Selective Search"></a>1. Selective Search</h4><p><strong>Goal:</strong><br>Propose possible regions of the object.</p>
+        <h1 id="R-CNN-Fast-R-CNN-and-Faster-R-CNN-Learning-Note"><a href="#R-CNN-Fast-R-CNN-and-Faster-R-CNN-Learning-Note" class="headerlink" title="R-CNN, Fast R-CNN and Faster R-CNN Learning Note"></a>R-CNN, Fast R-CNN and Faster R-CNN Learning Note</h1><h2 id="R-CNN"><a href="#R-CNN" class="headerlink" title="R-CNN"></a>R-CNN</h2><h3 id="Pre-knowledge"><a href="#Pre-knowledge" class="headerlink" title="Pre-knowledge"></a>Pre-knowledge</h3><h4 id="1-Selective-Search"><a href="#1-Selective-Search" class="headerlink" title="1. Selective Search"></a>1. Selective Search</h4><p><strong>Goal:</strong><br>Propose possible regions of the object.</p>
 <p>Considerations:</p>
 <ol>
 <li><p>尽可能遍历所有的尺度，但是不同于暴力穷举，可以先得到小尺度的区域，然后一次次合并得到大的尺寸，这样也符合人类的视觉认知。</p>
@@ -484,7 +484,7 @@
 <p>由于SVM是二分类器，需要为每个类别训练单独的SVM；<br>SVM训练时输入正负样本在AlexNet CNN网络计算下的4096维特征，输出为该类的得分，训练的是SVM权重向量；<br>由于负样本太多，采用hard negative mining的方法在负样本中选取有代表性的负样本</p>
 <h4 id="Bounding-box-regression-training"><a href="#Bounding-box-regression-training" class="headerlink" title="Bounding box regression training"></a>Bounding box regression training</h4><p><img src="https://i.imgur.com/giDPiFI.png" alt=""></p>
 <p>输入数据为某类型样本对N个：{(Pi,Gi)}i=1⋯N以及Pii=1⋯N所对应的AlexNet CNN网络Pool5层特征ϕ5(Pi)i=1⋯N，输出回归后的建议框Bounding-box，训练的是dx(P)，dy(P)，dw(P)，dh(P)四种变换操作的权重向量。</p>
-<p><a href="http://blog.leanote.com/post/jony_faker/RCNN%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3" title="Reference 1" target="_blank" rel="external">Reference 1</a></p>
+<h2 id="Fast-RCNN"><a href="#Fast-RCNN" class="headerlink" title="Fast RCNN"></a>Fast RCNN</h2><h2 id="Faster-RCNN"><a href="#Faster-RCNN" class="headerlink" title="Faster RCNN"></a>Faster RCNN</h2><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="http://blog.leanote.com/post/jony_faker/RCNN%E8%AE%BA%E6%96%87%E8%AF%A6%E8%A7%A3" title="Reference 1" target="_blank" rel="external">Reference 1</a></p>
 <p><a href="http://blog.csdn.net/u011534057/article/details/51218250" title="Reference 2" target="_blank" rel="external">Reference 2</a></p>
 
       
@@ -721,7 +721,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#R-CNN-Fast-R-CNN-and-Faster-R-CNN-Learning-Note"><span class="nav-number">1.</span> <span class="nav-text">R-CNN, Fast R-CNN and Faster R-CNN Learning Note</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#A-R-CNN"><span class="nav-number">1.1.</span> <span class="nav-text">A. R-CNN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Pre-knowledge"><span class="nav-number">1.1.1.</span> <span class="nav-text">Pre-knowledge</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Selective-Search"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">1. Selective Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Non-maximum-suppression-非极大值抑制"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">2. Non-maximum suppression 非极大值抑制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Main-Steps-of-RCNN"><span class="nav-number">1.1.2.</span> <span class="nav-text">Main Steps of RCNN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Training-Process"><span class="nav-number">1.1.3.</span> <span class="nav-text">Training Process</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AlexNet-Training"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">AlexNet Training</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SVM-training"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">SVM training</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Bounding-box-regression-training"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">Bounding box regression training</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#R-CNN-Fast-R-CNN-and-Faster-R-CNN-Learning-Note"><span class="nav-number">1.</span> <span class="nav-text">R-CNN, Fast R-CNN and Faster R-CNN Learning Note</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#R-CNN"><span class="nav-number">1.1.</span> <span class="nav-text">R-CNN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Pre-knowledge"><span class="nav-number">1.1.1.</span> <span class="nav-text">Pre-knowledge</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-Selective-Search"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">1. Selective Search</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-Non-maximum-suppression-非极大值抑制"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">2. Non-maximum suppression 非极大值抑制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Main-Steps-of-RCNN"><span class="nav-number">1.1.2.</span> <span class="nav-text">Main Steps of RCNN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Training-Process"><span class="nav-number">1.1.3.</span> <span class="nav-text">Training Process</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AlexNet-Training"><span class="nav-number">1.1.3.1.</span> <span class="nav-text">AlexNet Training</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SVM-training"><span class="nav-number">1.1.3.2.</span> <span class="nav-text">SVM training</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Bounding-box-regression-training"><span class="nav-number">1.1.3.3.</span> <span class="nav-text">Bounding box regression training</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Fast-RCNN"><span class="nav-number">1.2.</span> <span class="nav-text">Fast RCNN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Faster-RCNN"><span class="nav-number">1.3.</span> <span class="nav-text">Faster RCNN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Reference"><span class="nav-number">1.4.</span> <span class="nav-text">Reference</span></a></li></ol></li></ol></div>
             
 
           </div>
