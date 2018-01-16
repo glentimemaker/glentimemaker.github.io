@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="Research Blog">
 <meta property="og:description" content="A. How to install Vatic in one line codeVatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where">
 <meta property="og:image" content="http://i.imgur.com/YjDBjHU.jpg">
-<meta property="og:updated_time" content="2017-10-11T00:34:22.519Z">
+<meta property="og:updated_time" content="2018-01-16T03:51:44.926Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Install and Use Vatic Annotation Tool">
 <meta name="twitter:description" content="A. How to install Vatic in one line codeVatic is a very convinient online annotation tool for labeling objects of videos. The vatic annotation tool enables users to easily annotate video files, where">
@@ -466,10 +466,12 @@ turkic extract /home/vagrant/vagrant_data/your_video_name.mp4 /home/vagrant/vagr
 </code></pre><p>More options, <a href="https://github.com/cvondrick/vatic" target="_blank" rel="external">Vatic</a>.</p>
 <h3 id="7-Check-all-the-URLS"><a href="#7-Check-all-the-URLS" class="headerlink" title="7. Check all the URLS"></a>7. Check all the URLS</h3><pre><code>turkic publish --offline
 </code></pre><p>or open the browser and type in </p>
-<pre><code> http://localhost/?id=1&amp;hitId=offline
-http://localhost/?id=2&amp;hitId=offline
-http://localhost/?id=3&amp;hitId=offline
+<pre><code> http://localhost:8080/?id=1&amp;hitId=offline
+http://localhost:8080/?id=2&amp;hitId=offline
+http://localhost:8080/?id=3&amp;hitId=offline
 ...
+</code></pre><p>If does not work, try:</p>
+<pre><code>http://&lt;your_IP_address&gt;:8080/?id=1&amp;hitId=offline
 </code></pre><h3 id="8-Save-the-annotation"><a href="#8-Save-the-annotation" class="headerlink" title="8. Save the annotation"></a>8. Save the annotation</h3><pre><code>turkic dump job_id -o /home/vagrant/vagrant_data/annotations.txt
 </code></pre><p>The command can also output to many different formats. Available formats are:</p>
 <pre><code>--xml       Use XML
@@ -478,7 +480,19 @@ http://localhost/?id=3&amp;hitId=offline
 --pickle    Use Python&apos;s Pickle
 --labelme   Use LabelMe video&apos;s XML format
 --pascal    Use PASCAL VOC format, treating each frame as an image
-</code></pre>
+</code></pre><h3 id="9-Re-open-the-vatic"><a href="#9-Re-open-the-vatic" class="headerlink" title="9. Re-open the vatic"></a>9. Re-open the vatic</h3><p>If you close the terminal or kill the job accidentally, you definitely need the following tutorial (I suffered a lot from closing something accidentally..).</p>
+<p>Step 1: Check the docker job id</p>
+<pre><code>docker ps -a
+</code></pre><p>Step 2: Restart the job</p>
+<pre><code>docker start &lt;Container id&gt;
+</code></pre><p>Step 3: Go back to the docker folder</p>
+<pre><code>docker attach &lt;Container id&gt;
+</code></pre><p>Step 4: Change to the vatic folder</p>
+<pre><code>cd /home/vagrant/vatic
+</code></pre><p>Step 5: Restart MySQL and Apache</p>
+<pre><code>/home/vagrant/start_services.sh
+</code></pre><p>Step 6: Use the same url you worked before! Done!</p>
+
       
     </div>
 
@@ -617,7 +631,7 @@ http://localhost/?id=3&amp;hitId=offline
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
@@ -639,7 +653,7 @@ http://localhost/?id=3&amp;hitId=offline
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -717,7 +731,7 @@ http://localhost/?id=3&amp;hitId=offline
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#A-How-to-install-Vatic-in-one-line-code"><span class="nav-number">1.</span> <span class="nav-text">A. How to install Vatic in one line code</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Install-docker"><span class="nav-number">1.1.</span> <span class="nav-text">1. Install docker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Install-and-use-Vatic"><span class="nav-number">1.2.</span> <span class="nav-text">2. Install and use Vatic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-Commands"><span class="nav-number">1.3.</span> <span class="nav-text">Docker Commands</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B-Another-installation-method"><span class="nav-number">2.</span> <span class="nav-text">B. Another installation method</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Install-Docker-the-same-as-method-1"><span class="nav-number">2.1.</span> <span class="nav-text">1. Install Docker (the same as method #1)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Create-folder-and-Link"><span class="nav-number">2.2.</span> <span class="nav-text">2. Create folder and Link</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Start-the-Vatic-server"><span class="nav-number">2.3.</span> <span class="nav-text">3. Start the Vatic server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Start-the-MySQL-and-Apache"><span class="nav-number">2.4.</span> <span class="nav-text">4. Start the MySQL and Apache</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Extract-the-frames-from-video"><span class="nav-number">2.5.</span> <span class="nav-text">5. Extract the frames from video</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Load-and-Publish"><span class="nav-number">2.6.</span> <span class="nav-text">6. Load and Publish</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Check-all-the-URLS"><span class="nav-number">2.7.</span> <span class="nav-text">7. Check all the URLS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Save-the-annotation"><span class="nav-number">2.8.</span> <span class="nav-text">8. Save the annotation</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#A-How-to-install-Vatic-in-one-line-code"><span class="nav-number">1.</span> <span class="nav-text">A. How to install Vatic in one line code</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Install-docker"><span class="nav-number">1.1.</span> <span class="nav-text">1. Install docker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Install-and-use-Vatic"><span class="nav-number">1.2.</span> <span class="nav-text">2. Install and use Vatic</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-Commands"><span class="nav-number">1.3.</span> <span class="nav-text">Docker Commands</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B-Another-installation-method"><span class="nav-number">2.</span> <span class="nav-text">B. Another installation method</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Install-Docker-the-same-as-method-1"><span class="nav-number">2.1.</span> <span class="nav-text">1. Install Docker (the same as method #1)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Create-folder-and-Link"><span class="nav-number">2.2.</span> <span class="nav-text">2. Create folder and Link</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Start-the-Vatic-server"><span class="nav-number">2.3.</span> <span class="nav-text">3. Start the Vatic server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Start-the-MySQL-and-Apache"><span class="nav-number">2.4.</span> <span class="nav-text">4. Start the MySQL and Apache</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Extract-the-frames-from-video"><span class="nav-number">2.5.</span> <span class="nav-text">5. Extract the frames from video</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Load-and-Publish"><span class="nav-number">2.6.</span> <span class="nav-text">6. Load and Publish</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Check-all-the-URLS"><span class="nav-number">2.7.</span> <span class="nav-text">7. Check all the URLS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Save-the-annotation"><span class="nav-number">2.8.</span> <span class="nav-text">8. Save the annotation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Re-open-the-vatic"><span class="nav-number">2.9.</span> <span class="nav-text">9. Re-open the vatic</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -743,7 +757,7 @@ http://localhost/?id=3&amp;hitId=offline
 <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>

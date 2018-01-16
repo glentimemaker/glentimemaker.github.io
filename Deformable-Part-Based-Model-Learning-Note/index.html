@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="DPM," />
 
 
 
@@ -93,12 +93,28 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Research Blog">
-<meta property="og:url" content="http://glentimemaker.github.io/tags/vatic/index.html">
+<meta name="description" content="# First, HOGSecond, star-structured deformable part: latent SVM 来学习，也就是说我们有了一张正样本的图片，标注了bounding box，我们要在某一位置，某一尺度，提取出一个区域作为某一component 的正样本。 自行车的车轮的位置，是完全没有位置标注的，只知道在bounding box区域附件有一个车轮。不知道精确位置，就没法">
+<meta name="keywords" content="DPM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Deformable Part-Based Model Learning Note">
+<meta property="og:url" content="http://glentimemaker.github.io/Deformable-Part-Based-Model-Learning-Note/index.html">
 <meta property="og:site_name" content="Research Blog">
+<meta property="og:description" content="# First, HOGSecond, star-structured deformable part: latent SVM 来学习，也就是说我们有了一张正样本的图片，标注了bounding box，我们要在某一位置，某一尺度，提取出一个区域作为某一component 的正样本。 自行车的车轮的位置，是完全没有位置标注的，只知道在bounding box区域附件有一个车轮。不知道精确位置，就没法">
+<meta property="og:image" content="https://i.imgur.com/QlR4FaU.png">
+<meta property="og:image" content="https://i.imgur.com/8LpCBtg.png">
+<meta property="og:image" content="https://i.imgur.com/ttwr2Lo.png">
+<meta property="og:image" content="https://i.imgur.com/0Za2YTF.png">
+<meta property="og:image" content="https://i.imgur.com/QxadJvq.png">
+<meta property="og:image" content="https://i.imgur.com/bm4SwYZ.png">
+<meta property="og:image" content="https://i.imgur.com/Ygu8vmR.png">
+<meta property="og:image" content="https://i.imgur.com/A12X7HD.png">
+<meta property="og:image" content="https://i.imgur.com/ZDS6iDf.png">
+<meta property="og:image" content="https://i.imgur.com/HKLPFko.png">
+<meta property="og:updated_time" content="2017-10-15T19:48:15.550Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Research Blog">
+<meta name="twitter:title" content="Deformable Part-Based Model Learning Note">
+<meta name="twitter:description" content="# First, HOGSecond, star-structured deformable part: latent SVM 来学习，也就是说我们有了一张正样本的图片，标注了bounding box，我们要在某一位置，某一尺度，提取出一个区域作为某一component 的正样本。 自行车的车轮的位置，是完全没有位置标注的，只知道在bounding box区域附件有一个车轮。不知道精确位置，就没法">
+<meta name="twitter:image" content="https://i.imgur.com/QlR4FaU.png">
 
 
 
@@ -126,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="http://glentimemaker.github.io/tags/vatic/"/>
+  <link rel="canonical" href="http://glentimemaker.github.io/Deformable-Part-Based-Model-Learning-Note/"/>
 
 
 
 
 
-  <title>Tag: vatic | Research Blog</title>
+  <title>Deformable Part-Based Model Learning Note | Research Blog</title>
   
 
 
@@ -166,7 +182,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -294,44 +310,230 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>vatic<small>Tag</small>
-      </h1>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://glentimemaker.github.io/Deformable-Part-Based-Model-Learning-Note/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Chenlei Zhang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars3.githubusercontent.com/u/15701122?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Research Blog">
+    </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Deformable Part-Based Model Learning Note</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-10-13T12:24:23-07:00">
+                2017-10-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Learning-Note/" itemprop="url" rel="index">
+                    <span itemprop="name">Learning Note</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/Deformable-Part-Based-Model-Learning-Note/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://glentimemaker.github.io/Deformable-Part-Based-Model-Learning-Note/" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/Deformable-Part-Based-Model-Learning-Note/" class="leancloud_visitors" data-flag-title="Deformable Part-Based Model Learning Note">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h1 id=""><a href="#" class="headerlink" title="#"></a>#</h1><p><img src="https://i.imgur.com/QlR4FaU.png" alt=""></p>
+<p>First, HOG<br>Second, star-structured deformable part: latent SVM 来学习，也就是说我们有了一张正样本的图片，标注了bounding box，我们要在某一位置，某一尺度，提取出一个区域作为某一component 的正样本。</p>
+<p>自行车的车轮的位置，是完全没有位置标注的，只知道在bounding box区域附件有一个车轮。不知道精确位置，就没法提取样本。这种情况下，车轮会有很多个可能的位置，也就会形成一个正样本集，但里面只有部分是包含轮子的。MI-SVM。本质思想是将标准SVM的最大化样本间距扩展为最大化样本集间距。具体来说是选取正样本集中最像正样本的样本用作训练，正样本集内其它的样本就等候发落。同样取负样本中离分界面最近的负样本作为负样本。</p>
+<p><img src="https://i.imgur.com/8LpCBtg.png" alt=""></p>
+<p><strong>Find the best BB of one positive by MI-SVM</strong></p>
+<p><a href="http://blog.csdn.net/pkueecser/article/details/8274713" target="_blank" rel="external">Reference</a></p>
+<p>标记训练图片样本的时候需要给出一个矩形框指明目标的位置，有可能标的不够准确，导致不同的样本之间对不齐，这时候可以将标记的矩形框做一些局部扰动得到一些新的矩形框，将它们一起看成一个bag，其中总有一个是最佳的正样本，也就是标记为正。而取一张没有目标的图片，作为负样本包：无论在里面怎么截取图片，都是负样本。这就是multiple instance problem。</p>
+<p>此时要找到这个bag里唯一的/最好的正样本。</p>
+<p>解决这个问题的方法其实挺直接的：迭代优化（alternative optimization)。也就是说，我们先假设已经知道了所有样本的标记，那么就可以通过某种监督学习的方法得到一个分类模型，通过这个模型我们可以对每个训练样本进行预测，然后更新它们的标记，我们又可以拿这一次新得到的标记重新训练分类模型了。所以整个优化过程分为两部分：监督学习，标记更新。</p>
+<p>这里还有一些地方需要注意：</p>
+<p>第一点， 训练监督学习的模型的时候，只从正样本包里挑选被预测的“最像正确”(也就是分类得分最高)的那一个，正样本包里面其他的样本，不管预测出来是正的还是负的都不要了。这是因为，其实多示例的问题也可以描述为，正样本包里面“最正确”的一个样本标记是正的，跟其他样本无关。所以，这种选择策略恰恰是符合问题定义的。</p>
+<p>第二点，如果负样本足够多的话，可以只挑选每个负样本包里面被预测“最像正确”的一个样本作为负样本进行训练，这样子的负样本也叫做hard sample或者most violated sample。实践上来说，它们对于模型快速收敛是最有效的。</p>
+<p><strong>Train Parts Model by using Latent SVM</strong></p>
+<p>隐变量指的是部件位置(parts position)的配置变量，这个隐变量的配置可以类比于混合模型(Mixture Model)中决定一个样本属于哪个模型的虚拟变量，虽然不是分类器的一个input varible,要与分类器所有input variable的参数一起进行训练，所以才叫Latent SVM.</p>
+<p>我们在训练的时候要找到一个隐变量的最优配置{V}，使得整个分类器在对男女分别训练之后效果达到最好，最后训练的结果也就包含了样本中每个个体的性别变量V的配置，这也就是隐变量了，当我们用训练好的模型进行判别新的样本的时候，我们只需要分别计算新的样本在每个模型下的配置，用其中得分最高的那个配置判断该样本是不是人。当然，引入这样的隐变量在模型训练的时候会更麻烦，每次迭代求最优值都要考虑隐变量配置的调整。</p>
+<p>The positions of the parts are not given in both the<br>training and the testing images. The variables that exist but not known in training samples are called latent variables. The learning algorithm must be able to find/discover the optimal values for the latent variables, namely the position of the parts.</p>
+<p>Step 1. we suppose the positions of the parts are<br>fixed for each frame, and train part detector using<br>SVM</p>
+<p>Step 2. Using the trained SVM classifier, find the<br>optimal part position in each training sample</p>
+<p>Training process in general:</p>
+<p><img src="https://i.imgur.com/ttwr2Lo.png" alt=""></p>
+<p>Training Details:</p>
+<p><img src="https://i.imgur.com/0Za2YTF.png" alt=""><br><img src="https://i.imgur.com/QxadJvq.png" alt=""><br><img src="https://i.imgur.com/bm4SwYZ.png" alt=""></p>
+<p>那个objective function 看起来和普通的SVMs 是一样的，只是在标准的SVM里f 直接等于beta点乘feature vetors 而在latent SVM里 phi依赖于latent variable z 然后训练每个example的时候，都要选一个z使得f最大。之后做gradiant decent 更新 weight 的方法latent SVM 和普通的SVM是差不多的。</p>
+<p>Two Goals:</p>
+<p><img src="https://i.imgur.com/Ygu8vmR.png" alt=""></p>
+<p>Conclusion:</p>
+<p><img src="https://i.imgur.com/A12X7HD.png" alt=""></p>
+<p><img src="https://i.imgur.com/ZDS6iDf.png" alt=""></p>
+<p><strong>Find Hard Negatives by Data Mining</strong></p>
+<p>A very large number of negative examples, find the hard negatives to do training.</p>
+<p><strong>Detect Different view of object by Mixture Model</strong></p>
+<p><img src="https://i.imgur.com/HKLPFko.png" alt=""></p>
+<p><a href="http://web.engr.oregonstate.edu/~sinisa/courses/OSU/CS559/lectures/LatentSVM.pdf" target="_blank" rel="external">Latent SVM</a></p>
+<p><a href="http://lear.inrialpes.fr/~oneata/reading_group/dpm.pdf" target="_blank" rel="external">dpm latent svm algorithm details</a></p>
 
-      <h2 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/Install-and-Use-Vatic-Annotation-Tool/" itemprop="url">
-              
-                <span itemprop="name">Install and Use Vatic Annotation Tool</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-07-17T18:41:31-07:00"
-              content="2017-07-17" >
-          07-17
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/DPM/" rel="tag"># DPM</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/RCNN-serials-Learning-Note/" rel="next" title="RCNN serials Learning Note">
+                <i class="fa fa-chevron-left"></i> RCNN serials Learning Note
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type = "text/javascript" src = "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59485a3d14991c1d" async = "async" ></script>
+</div>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -339,6 +541,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -358,8 +571,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars3.githubusercontent.com/u/15701122?v=3&s=460"
@@ -464,6 +686,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text">#</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -591,10 +829,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 
@@ -612,6 +850,18 @@
       <script id="dsq-count-scr" src="https://glentimemaker-github-io.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://glentimemaker.github.io/Deformable-Part-Based-Model-Learning-Note/';
+          this.page.identifier = 'Deformable-Part-Based-Model-Learning-Note/';
+          this.page.title = 'Deformable Part-Based Model Learning Note';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://glentimemaker-github-io.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
